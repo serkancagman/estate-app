@@ -64,7 +64,9 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <form className="position-relative">
+           
+          </div>
+          <form className="position-relative">
               <input
                 type="text"
                 className={style.searchInput}
@@ -78,7 +80,6 @@ const Header = () => {
             <Dropdown overlay={menu}>
               <BsFillPersonFill className={style.userIcon} />
             </Dropdown>
-          </div>
         </nav>
       </div>
     </header>
