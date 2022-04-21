@@ -1,0 +1,61 @@
+@import "../../../style/variables.scss";
+
+.header {
+  background-color: $navyBlue;
+  padding: 10px 0;
+}
+.logo {
+  border-right: 1px solid #666;
+  display: inline-block;
+  padding-right: 20px;
+}
+.navLink {
+  color: #fff;
+  font-size: 20px;
+  padding: 0 5px;
+
+  &:hover {
+    color: $orange !important;
+  }
+}
+.userIcon {
+    margin-left: 25px;
+  cursor: pointer;
+  font-size: 45px;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 10px;
+
+  &:hover {
+    color: $orange !important;
+    border: 1px solid $orange;
+  }
+}
+.searchInput{
+    padding: 6px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all .2s ease-in-out;
+    &:focus{
+        border-color: $orange;
+    }
+}
+.searchButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.searchIcon{
+    color: $orange;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
