@@ -23,9 +23,9 @@
         color: #fff !important;
       }
     }
-    .productImageOverlay{
-        opacity: 1 !important;
-        top: 0 !important;
+    .productImageOverlay {
+      opacity: 1 !important;
+      top: 0 !important;
     }
   }
 }
@@ -45,7 +45,7 @@
   height: 100%;
   z-index: 2;
   padding: 10px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .productType {
   display: inline-block;
@@ -66,10 +66,10 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  transition: all .2s  ease-in-out;
+  transition: all 0.2s ease-in-out;
   @include flexrowcenter;
   .productPriceText {
-    transition: all .2s  ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: $navyBlue;
     font-weight: 550;
   }

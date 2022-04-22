@@ -1,0 +1,45 @@
+.solution {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: #f7f7f7;
+}
+
+.solutionImg {
+  width: 100%;
+  height: 100%;
+}
+
+.solutionContent {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.solutionContent .solutionTitle {
+  color: #201c2d;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 30px 0;
+  text-align: start;
+}
+
+.solutionContent .solutionText {
+  color: #62606c;
+  text-align: start;
+  font-size: 17px;
+}
+
+.solutionBtn {
+  background-color: #fe5631;
+  padding: 15px 25px;
+  color: #fff;
+  font-weight: 550;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 50px 0;
+}
+
+.solutionBtn:hover {
+  background-color: #f3775c !important;
+}
+/*# sourceMappingURL=Solution.module.css.map */

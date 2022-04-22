@@ -45,6 +45,10 @@ const Featured = () => {
             <Product />
           </SwiperSlide>
         </Swiper>
+
+        <div className="d-flex align-items-center justify-content-center">
+          <button className={style.viewAllBtn}>VIEW ALL APARTMENTS</button>
+        </div>
       </div>
     </section>
   );

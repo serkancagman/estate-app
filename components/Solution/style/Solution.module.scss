@@ -1,0 +1,31 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+
+.solution{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background-color: #f7f7f7;
+}
+.solutionImg{
+    width: 100%;
+    height: 100%;
+}
+
+.solutionContent{
+    padding: 10px 0;
+    width: 100%;
+
+    .solutionTitle{
+        @include mainTitle;
+        text-align: start;
+    }
+    .solutionText{
+        color: $pColor;
+        text-align: start;
+        font-size: 17px;
+    }
+}
+.solutionBtn{
+    @include orangeButton;
+}

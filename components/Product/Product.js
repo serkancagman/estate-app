@@ -45,7 +45,10 @@ const Product = () => {
               </div>
               <div className={style.productFeature}>
                 <BiCar className={style.productFeatureIcon} />{" "}
-                <span className={style.productFeatureText}> 2 Car Capacity</span>
+                <span className={style.productFeatureText}>
+                  {" "}
+                  2 Car Capacity
+                </span>
               </div>
             </div>
           </div>

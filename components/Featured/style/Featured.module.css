@@ -6,7 +6,6 @@
 .featuredTitle {
   color: #201c2d;
   font-size: 35px;
-  text-align: center;
   font-weight: 600;
   margin: 30px 0;
 }
@@ -20,5 +19,20 @@
   color: #62606c;
   text-align: center;
   font-size: 17px;
+}
+
+.viewAllBtn {
+  background-color: #fe5631;
+  padding: 15px 25px;
+  color: #fff;
+  font-weight: 550;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 50px 0;
+}
+
+.viewAllBtn:hover {
+  background-color: #f3775c !important;
 }
 /*# sourceMappingURL=Featured.module.css.map */
