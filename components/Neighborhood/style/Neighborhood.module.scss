@@ -41,7 +41,6 @@
 
     .neighborhoodItemImg {
       border-radius: 10px;
-        
     }
   }
 }
@@ -68,6 +67,6 @@
     color: #fff;
   }
 }
-.viewAllBtn{
+.viewAllBtn {
   @include orangeButton;
 }

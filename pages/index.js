@@ -8,6 +8,7 @@ import {
   Options,
   Partners,
   Solution,
+  Articles,
 } from "components";
 import Head from "next/head";
 
@@ -29,6 +30,7 @@ export default function Home() {
         <NewAdded />
         <Case />
         <Neighborhood />
+        <Articles />
       </main>
     </div>
   );

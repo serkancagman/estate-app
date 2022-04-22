@@ -116,10 +116,9 @@ const Neighborhood = () => {
             </div>
           </div>
           <div className="d-flex align-items-center justify-content-center">
-          <button className={style.viewAllBtn}>VIEW ALL APARTMENTS</button>
+            <button className={style.viewAllBtn}>VIEW MORE NEIGHBORHOOD</button>
+          </div>
         </div>
-        </div>
-       
       </div>
       <div className={style.fadeBackground}></div>
     </section>
