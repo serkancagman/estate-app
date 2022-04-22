@@ -4,4 +4,5 @@ export { default as Partners } from "./Partners/Partners";
 export { default as Options } from "./Options/Options";
 export { default as Featured } from "./Featured/Featured";
 export { default as Solution } from "./Solution/Solution";
+export {default as NewAdded} from "./NewAdded/NewAdded";
 

@@ -1,4 +1,4 @@
-import { Banner, Featured, Header, Options, Partners, Solution } from "components";
+import { Banner, Featured, Header, NewAdded, Options, Partners, Solution } from "components";
 import Head from "next/head";
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
         <Options />
         <Featured />
         <Solution/>
+        <NewAdded/>
       </main>
     </div>
   );

@@ -1,0 +1,171 @@
+.productWrapper {
+  margin: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+          box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 10px;
+}
+
+.productInner {
+  width: 100%;
+  height: 100%;
+}
+
+.product {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productImageArea {
+  position: relative;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.productImageArea .productImage {
+  border-radius: 10px;
+}
+
+.productImageOverlay {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 2;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.555)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.555) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.productType {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #fe5631;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 550;
+}
+
+.productPrice {
+  margin: 10px;
+}
+
+.productPriceText {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.productInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 280px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productInfo .productAddress {
+  font-size: 17px;
+  color: #fe5631;
+  font-weight: 500;
+}
+
+.productInfo .productTitle {
+  margin: 8px 0;
+  color: #201c2d;
+  font-weight: 550;
+  font-size: 20px;
+}
+
+.productInfo .productWidthTitle {
+  color: #62606c;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.productInfo .productWidthTitle .productWidth {
+  display: inline-block;
+  margin: 0 5px;
+  color: #201c2d;
+  font-weight: 550;
+}
+
+.productFeatureArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.productFeature {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productFeature .productFeatureIcon {
+  font-size: 20px;
+  color: #fe5631;
+}
+
+.productFeature .productFeatureText {
+  font-size: 15px;
+  margin: 0 5px;
+  color: #201c2d;
+}
+
+.productBottom {
+  border-top: 1px solid #e6e6e6;
+}
+/*# sourceMappingURL=ProductList.module.css.map */

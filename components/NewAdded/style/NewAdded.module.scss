@@ -1,0 +1,22 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+.newAdded{
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.newAddedHeader{
+    margin: 30px 0;
+
+    .newAddedTitle{
+        @include mainTitle;
+        text-align: center;
+    }
+    .newAddedSubTitle{
+        text-align: center;
+        padding: 0 1rem;
+        color: $pColor;
+        font-size: 17px;
+    }
+}

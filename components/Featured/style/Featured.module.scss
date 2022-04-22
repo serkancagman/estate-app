@@ -7,6 +7,7 @@
 }
 .featuredTitle {
   @include mainTitle;
+  text-align: center;
 }
 .featuredHeader {
   padding: 10px 0;
