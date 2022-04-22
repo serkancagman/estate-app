@@ -43,4 +43,109 @@
   z-index: -1;
   border-radius: 30px;
 }
+
+.filterOptionWrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 80%;
+  margin: 50px 0;
+}
+
+.filterOptionWrapper .filterOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filterOptionWrapper .filterOptions .filterOption {
+  margin-right: 20px;
+  padding: 10px 20px;
+  background-color: #f7f6f6;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.filterOptionWrapper .filterOptions .filterOption::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #f7f6f6;
+  position: absolute;
+  bottom: -7.5px;
+  right: 50%;
+  -webkit-transform: translateX(50%) rotate(45deg);
+          transform: translateX(50%) rotate(45deg);
+}
+
+.filterOptionWrapper .filterOptions .filterOption .filterOptionText {
+  font-size: 16px;
+  font-weight: 550;
+  color: #201c2d;
+}
+
+.activeOption {
+  background-color: #fe5631 !important;
+}
+
+.activeOption::after {
+  background-color: #fe5631 !important;
+}
+
+.activeOption .filterOptionText {
+  color: #fff !important;
+}
+
+.filterFormWrapper {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.moneyIcon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.moneyText {
+  color: #201c2d;
+  font-size: 16px;
+}
+
+.filterButton {
+  border: none;
+  background-color: #fe5631;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.filterButton:hover {
+  background-color: #f76747;
+}
+
+.filterBtn {
+  font-size: 20px;
+  color: #fff;
+}
 /*# sourceMappingURL=Banner.module.css.map */

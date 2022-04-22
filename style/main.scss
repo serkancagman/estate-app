@@ -1,0 +1,26 @@
+@import "./variables.scss";
+.ant-form-item {
+  margin-bottom: 0 !important;
+
+  &:hover {
+    border-color: $orange !important;
+  }
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: $orange !important;
+  color: #fff !important;
+}
+
+.ant-select-item {
+  &:focus {
+    border-color: $orange !important;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1) !important;
+  }
+}
+.ant-slider-handle{
+    border-color: $orange !important;
+}
+.ant-slider-track{
+    background-color: $orange !important;
+}

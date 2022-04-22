@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.ant-form-item:hover {
+  border-color: #fe5631 !important;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #fe5631 !important;
+  color: #fff !important;
+}
+
+.ant-select-item:focus {
+  border-color: #fe5631 !important;
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1) !important;
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-slider-handle {
+  border-color: #fe5631 !important;
+}
+
+.ant-slider-track {
+  background-color: #fe5631 !important;
+}
+/*# sourceMappingURL=main.css.map */
