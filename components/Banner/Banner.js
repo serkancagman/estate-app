@@ -9,6 +9,7 @@ import { useFormik } from "formik";
 const Banner = () => {
   const [stateType, setStateType] = React.useState("rent");
   const [slideValue, setSlideValue] = React.useState(0);
+  const [sellSlideValue, setSellSlideValue] = React.useState(0);
   const [propertyValue, setPropertyValue] = React.useState("");
   const [locationValue, setLocationValue] = React.useState("");
   const { Option } = Select;
@@ -104,7 +105,7 @@ console.log(slideValue);
                         <div className="d-flex justify-content-start align-items-center">
                           <FaRegMoneyBillAlt className={style.moneyIcon} />
                           <span className={style.moneyText}>
-                            $1,000 - $5,000
+                            ${slideValue[0] || 1000} - ${slideValue[1] || 5000}
                           </span>
                         </div>
                         <Form.Item>
@@ -167,16 +168,16 @@ console.log(slideValue);
                         <div className="d-flex justify-content-start align-items-center">
                           <FaRegMoneyBillAlt className={style.moneyIcon} />
                           <span className={style.moneyText}>
-                            $1,000 - $5,000
+                          ${sellSlideValue[0] || 100000} - ${sellSlideValue[1] || 900000}
                           </span>
                         </div>
                         <Form.Item>
                           <Slider
-                            onChange={(value) => setSlideValue(value)}
+                            onChange={(value) => setSellSlideValue(value)}
                             range
-                            min={1000}
-                            max={5000}
-                            defaultValue={[1000, 5000]}
+                            min={100000}
+                            max={900000}
+                            defaultValue={[100000, 900000]}
                           />
                         </Form.Item>
                       </div>
