@@ -1,0 +1,20 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+
+.featured{
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+.featuredTitle {
+  @include mainTitle;
+}
+.featuredHeader{
+    padding: 10px 0;
+    width: 100%;
+}
+.featuredText{
+    color: $pColor;
+    text-align: center;
+    font-size: 17px;
+}
