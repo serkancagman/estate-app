@@ -2,8 +2,7 @@
 @import "../../../style/mixins.scss";
 
 .featured {
-  margin: 1rem 0;
-  padding: 1rem 0;
+  @include sectionPM;
 }
 .featuredTitle {
   @include mainTitle;
@@ -14,21 +13,11 @@
   width: 100%;
 }
 .featuredText {
+  @include subTitle;
   color: $pColor;
   text-align: center;
   font-size: 17px;
 }
 .viewAllBtn {
-  background-color: $orange;
-  padding: 15px 25px;
-  color: #fff;
-  font-weight: 550;
-  border: none;
-  font-size: 16px;
-  border-radius: 5px;
-  margin: 50px 0;
-
-  &:hover {
-    background-color: #f3775c !important;
-  }
+ @include orangeButton ;
 }

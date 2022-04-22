@@ -17,8 +17,24 @@
 
 .newAddedHeader .newAddedSubTitle {
   text-align: center;
-  padding: 0 1rem;
+  margin: auto;
+  max-width: 700px;
   color: #62606c;
   font-size: 17px;
+}
+
+.viewAllBtn {
+  background-color: #fe5631;
+  padding: 15px 25px;
+  color: #fff;
+  font-weight: 550;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 50px 0;
+}
+
+.viewAllBtn:hover {
+  background-color: #f3775c !important;
 }
 /*# sourceMappingURL=NewAdded.module.css.map */

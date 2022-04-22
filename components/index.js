@@ -5,4 +5,5 @@ export { default as Options } from "./Options/Options";
 export { default as Featured } from "./Featured/Featured";
 export { default as Solution } from "./Solution/Solution";
 export {default as NewAdded} from "./NewAdded/NewAdded";
-
+export {default as ProductList} from "./ProductList/ProductList";
+export {default as Case} from "./Case/Case";

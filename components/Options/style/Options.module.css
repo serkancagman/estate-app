@@ -1,6 +1,6 @@
 .options {
-  margin: 1rem 0;
-  padding: 3rem 0;
+  margin: 40px 0;
+  padding: 40px 0;
   background-color: #e9faff;
 }
 
@@ -23,19 +23,16 @@
 
 .optionButton {
   background-color: #fe5631;
+  padding: 15px 25px;
   color: #fff;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-size: 17px;
   font-weight: 550;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 50px 0;
 }
 
 .optionButton:hover {
-  background-color: #1dc295;
+  background-color: #f3775c !important;
 }
 /*# sourceMappingURL=Options.module.css.map */

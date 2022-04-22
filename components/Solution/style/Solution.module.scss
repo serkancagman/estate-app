@@ -3,8 +3,7 @@
 
 
 .solution{
-    margin: 1rem 0;
-    padding: 1rem 0;
+    @include sectionPM;
     background-color: #f7f7f7;
 }
 .solutionImg{

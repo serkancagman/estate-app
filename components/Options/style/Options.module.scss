@@ -1,9 +1,8 @@
 @import "../../../style/variables.scss";
-
+@import "../../../style/mixins.scss";
 
 .options{
-    margin: 1rem 0;
-    padding: 3rem 0;
+    @include sectionPM;
     background-color: #e9faff;
 }
 .optionInner{
@@ -22,18 +21,5 @@
 }
 
 .optionButton{
-    background-color: $orange;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 17px;
-    font-weight: 550;
-    transition: all .1s ease-in-out;
-    &:hover{
-      
-        background-color: #1dc295;
-    }
+    @include orangeButton;
 }

@@ -11,8 +11,7 @@ const Featured = () => {
         <div className={style.featuredHeader}>
           <h2 className={style.featuredTitle}>Featured</h2>
           <p className={style.featuredText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
-            dolor ut quam aliquet.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quos, nobis deserunt accusamus dolorem voluptatem qui eaque odio iusto, velit placeat? Quae dignissimos at reprehenderit?
           </p>
         </div>
         <Swiper

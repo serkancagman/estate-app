@@ -1,9 +1,7 @@
 @import "../../../style/variables.scss";
 @import "../../../style/mixins.scss";
 .banner {
-  margin: 1rem 0;
-  padding: 1rem 0;
-
+  @include sectionPM;
   .bannerInner {
     position: relative;
     padding: 50px 0;

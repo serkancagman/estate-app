@@ -15,10 +15,13 @@ const NewAdded = () => {
           </p>
         </div>
         <div className="row g-3">
-                <ProductList/>
-                <ProductList/>
-                <ProductList/>
-                <ProductList/>
+          <ProductList />
+          <ProductList />
+          <ProductList />
+          <ProductList />
+        </div>
+        <div className="d-flex align-items-center justify-content-center">
+          <button className={style.viewAllBtn}>VIEW ALL APARTMENTS</button>
         </div>
       </div>
     </section>
