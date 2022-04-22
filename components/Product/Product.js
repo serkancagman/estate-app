@@ -14,6 +14,7 @@ const Product = () => {
               src={productImage}
               alt="product"
               className={style.productImage}
+              layout="responsive"
             />
             <div className={style.productImageOverlay}>
               <div className="d-flex justify-content-start align-items-center">

@@ -8,7 +8,7 @@ const CaseItem = ({ imageUrl, title }) => {
       <Link href="/case/[id]">
         <a className={style.caseItem}>
           <div className={style.caseItemImg}>
-            <Image src={imageUrl} className={style.caseImg} alt="..." />
+            <Image layout="responsive" src={imageUrl} className={style.caseImg} alt="..." />
           </div>
           <div className={style.caseItemText}>
             <h3 className={style.caseItemTitle}>{title}</h3>

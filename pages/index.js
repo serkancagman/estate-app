@@ -1,4 +1,14 @@
-import { Banner, Case, Featured, Header, NewAdded, Options, Partners, Solution } from "components";
+import {
+  Banner,
+  Case,
+  Featured,
+  Header,
+  Neighborhood,
+  NewAdded,
+  Options,
+  Partners,
+  Solution,
+} from "components";
 import Head from "next/head";
 
 export default function Home() {
@@ -15,9 +25,10 @@ export default function Home() {
         <Partners />
         <Options />
         <Featured />
-        <Solution/>
-        <NewAdded/>
-        <Case/>
+        <Solution />
+        <NewAdded />
+        <Case />
+        <Neighborhood />
       </main>
     </div>
   );
