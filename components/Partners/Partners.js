@@ -15,7 +15,9 @@ const Partners = () => {
   return (
     <section className={style.partners}>
       <div className="container">
-          <h2 className={style.title}>We Only Work With The Best Companies Around The Globe</h2>
+        <h2 className={style.title}>
+          We Only Work With The Best Companies Around The Globe
+        </h2>
         <ul className={style.partnersList}>
           <li className={style.partnersItem}>
             <Image width={200} height={100} src={partnerA} alt="partner" />
@@ -47,10 +49,10 @@ const Partners = () => {
           <li className={style.partnersItem}>
             <Image width={200} height={100} src={partnerJ} alt="partner" />
           </li>
-          </ul>
+        </ul>
       </div>
     </section>
-  )
+  );
 };
 
 export default Partners;

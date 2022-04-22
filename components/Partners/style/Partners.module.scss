@@ -1,24 +1,25 @@
 @import "../../../style/variables.scss";
 @import "../../../style/mixins.scss";
-.partners{
-    margin: 1rem 0;
-    padding: 1rem 0;
+.partners {
+  margin: 1rem 0;
+  padding: 1rem 0;
 }
-.title{
-    color: $navyBlue;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 600;
-    margin: 30px 0;
+.title {
+  color: $navyBlue;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  margin: 30px 0;
 }
-.partnersList{
-    @include flexrowjstart;
-    flex-wrap: wrap;
+.partnersList {
+  @include flexrowjstart;
+  flex-wrap: wrap;
 }
-.partnersItem{
-    background-color: #fff;
-    list-style: none;
-    padding: 15px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    margin: 3px;
+.partnersItem {
+  background-color: #fff;
+  list-style: none;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin: 3px;
 }

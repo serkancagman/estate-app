@@ -1,0 +1,41 @@
+.options {
+  margin: 1rem 0;
+  padding: 3rem 0;
+  background-color: #e9faff;
+}
+
+.optionInner {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.optionTitle {
+  margin: 20px 0;
+  color: #201c2d;
+  font-weight: 550;
+}
+
+.optionDescription {
+  color: #62606c;
+  font-size: 18px;
+}
+
+.optionButton {
+  background-color: #fe5631;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 550;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.optionButton:hover {
+  background-color: #1dc295;
+}
+/*# sourceMappingURL=Options.module.css.map */
