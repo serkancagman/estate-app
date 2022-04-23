@@ -43,9 +43,28 @@ const Blog = () => {
               personImg={personImage}
             />
           </SwiperSlide>
-            <SwiperSlide>
-           
-          <BlogItem
+          <SwiperSlide>
+            <BlogItem
+              imgUrl={blogImage2}
+              stateType="HOUSES"
+              title="Apartio Helps Get Your Dream & Luxury Space Alexa"
+              owner="Nia Watson"
+              date="29 January"
+              personImg={personImage2}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <BlogItem
+              imgUrl={blogImage3}
+              stateType="COMMERCIAL"
+              title=" Housing Markets That Changed the  Most This Decade"
+              owner="MILANA KURTZ"
+              date="25 January"
+              personImg={personImage3}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <BlogItem
               imgUrl={blogImage2}
               stateType="HOUSES"
               title="Apartio Helps Get Your Dream & Luxury Space Alexa"

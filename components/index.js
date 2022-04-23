@@ -10,3 +10,4 @@ export { default as Case } from "./Case/Case";
 export { default as Neighborhood } from "./Neighborhood/Neighborhood";
 export { default as Articles } from "./Articles/Articles";
 export { default as Blog } from "./Blog/Blog";
+export { default as Footer } from "./Footer/Footer";

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .partners {
   margin: 40px 0;
   padding: 40px 0;
@@ -9,6 +11,7 @@
   font-size: 35px;
   font-weight: 600;
   margin: 30px 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .partnersList {

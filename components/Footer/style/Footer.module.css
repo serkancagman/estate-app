@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.footer {
+  padding-top: 50px;
+  background: url("../../../assets/footer/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footerSloganText {
+  margin: 35px 0;
+  color: #fff;
+}
+
+.socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footerSocialLink {
+  margin-right: 20px;
+  background-color: #5a5764;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerSocialLink:hover {
+  background-color: #fff;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.footerSocialLink:hover .socialIcon {
+  color: #fe5631 !important;
+}
+
+.footerSocialLink .socialIcon {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin: auto;
+  font-size: 17px;
+  color: #fff;
+}
+
+.footerTitle {
+  color: #fff;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footerList {
+  padding: 0;
+  height: 100%;
+}
+
+.footerList .footerListItem {
+  list-style: none;
+  margin: 15px;
+}
+
+.footerList .footerListItem .footerListLink {
+  font-size: 14px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerList .footerListItem .footerListLink:hover {
+  color: #fe5631;
+}
+
+.footerListIcon {
+  font-size: 20px;
+  min-width: 30px;
+  margin-right: 10px;
+  color: #fe5631;
+}
+
+.formArea {
+  position: relative;
+  margin-top: 40px;
+}
+
+.footerInput {
+  width: 100%;
+  padding: 20px;
+  background-color: #5a5764;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footerSubmitBtn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+  color: #fe5631;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #fe5631;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.footerSubmitBtn:hover {
+  background-color: #1dc295;
+}
+
+.footerSubmitIcon {
+  font-size: 18px;
+}
+
+.footerText {
+  margin: 25px 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.footerBottom {
+  border-top: 1px solid #5a5764;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.footerTitle {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+.footerTitle .byTitle {
+  color: #fe5631;
+}
+/*# sourceMappingURL=Footer.module.css.map */

@@ -10,6 +10,7 @@ import {
   Solution,
   Articles,
   Blog,
+  Footer,
 } from "components";
 import Head from "next/head";
 
@@ -32,7 +33,8 @@ export default function Home() {
         <Case />
         <Neighborhood />
         <Articles />
-        <Blog/>
+        <Blog />
+        <Footer />
       </main>
     </div>
   );
