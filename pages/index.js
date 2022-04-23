@@ -9,6 +9,7 @@ import {
   Partners,
   Solution,
   Articles,
+  Blog,
 } from "components";
 import Head from "next/head";
 
@@ -31,6 +32,7 @@ export default function Home() {
         <Case />
         <Neighborhood />
         <Articles />
+        <Blog/>
       </main>
     </div>
   );
