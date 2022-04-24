@@ -4,7 +4,7 @@ export const productsSlice = createSlice({
     name: "products",
     initialState: {
         products: [],
-        loading: false,
+        loading: true,
         error: null,
     },
     reducers: {

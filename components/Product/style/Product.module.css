@@ -205,4 +205,12 @@
 .productButton:hover {
   background-color: #fe5631;
 }
+
+.featuredText {
+  background-color: #1dc295 !important;
+}
+
+.newText {
+  background-color: purple !important;
+}
 /*# sourceMappingURL=Product.module.css.map */

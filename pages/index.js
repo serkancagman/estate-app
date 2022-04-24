@@ -49,9 +49,11 @@ export default function Home({ products }) {
     </div>
   );
 }
-export async function getStaticProps() {
+Home.getInitialProps = async () => {
   const res = await axios.get(`${process.env.REACT_APP_API_URL}product`);
   console.log(res.data);
 
-  return { props: { products: res.data } };
+  return { 
+    products: res.data
+  };
 }
