@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Form, Select, Slider } from "antd";
 import { BsSearch } from "react-icons/bs";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
-import { useFormik } from "formik";
+import { useSelector } from "react-redux";
 const Banner = () => {
   const [stateType, setStateType] = React.useState("rent");
   const [slideValue, setSlideValue] = React.useState(0);
@@ -14,7 +14,9 @@ const Banner = () => {
   const [locationValue, setLocationValue] = React.useState("");
   const { Option } = Select;
 
-console.log(slideValue);
+  const {products, loading, error} = useSelector(state => state.products);
+
+  console.log(products);
 
   return (
     <section className={style.banner}>
