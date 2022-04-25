@@ -7,6 +7,7 @@ import Image from "next/image";
 import { BiBed, BiBath, BiCar } from "react-icons/bi";
 import { Rate } from "antd";
 import DescriptionBox from "./DescriptionBox";
+import Overview from "./Overview";
 const ProductDetail = ({ product }) => {
   console.log(product);
   return (
@@ -120,6 +121,9 @@ const ProductDetail = ({ product }) => {
             </div>
             <div className="col-12">
             <DescriptionBox />
+            </div>
+            <div className="col-12">
+                <Overview product={product} />
             </div>
           </div>
       
