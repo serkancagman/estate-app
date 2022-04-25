@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import { BiBed, BiBath, BiCar } from "react-icons/bi";
 import { Rate } from "antd";
+import DescriptionBox from "./DescriptionBox";
 const ProductDetail = ({ product }) => {
   console.log(product);
   return (
@@ -41,6 +42,7 @@ const ProductDetail = ({ product }) => {
         </div>
         <div className="row g-3">
           <div className="col-lg-8 col-md-12">
+              <div className="col-12">
             <div className={style.productDetailHeader}>
               <div className={style.productDetailInner}>
                 <div className={style.productDetailLeft}>
@@ -115,7 +117,12 @@ const ProductDetail = ({ product }) => {
                 </div>
               </div>
             </div>
+            </div>
+            <div className="col-12">
+            <DescriptionBox />
+            </div>
           </div>
+      
         </div>
       </div>
     </section>
