@@ -1,0 +1,127 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+.productDetail {
+  margin: 1rem 0;
+  height: 100%;
+}
+.productImageWrapper {
+  font-size: 0;
+  margin: 10px;
+  .productImage {
+    border-radius: 15px;
+  }
+}
+
+.productDetailHeader {
+    @include productDetailBox;
+}
+.productDetailInner {
+  padding: 15px;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.productDetailLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+
+  .productDetailTags {
+    @include flexrowastart;
+    margin-bottom: 15px;
+
+    .productDetailTag {
+      padding: 5px 10px;
+      font-family: $mainFont;
+      font-size: 15px;
+      margin-right: 10px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: 600;
+    }
+    .advertTag {
+      background-color: $orange;
+    }
+    .featuredTag {
+      background-color: $green;
+    }
+    .isNewTag {
+      background-color: purple;
+    }
+  }
+  .productDetailAddress {
+    color: $orange;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $mainFont;
+    margin-bottom: 15px;
+  }
+  .productDetailTitle {
+    font-family: $mainFont;
+    color: $navyBlue;
+    margin-bottom: 15px;
+  }
+  .productDetailArea {
+    margin-bottom: 15px;
+    .productDetailAreaText {
+      font-family: $mainFont;
+      color: $pColor;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .productDetailAreaTotal {
+      color: $orange;
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+  .productDetailFeature {
+    @include flexrowjstart;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .productDetailFeatureItem {
+      margin-right: 10px;
+      @include flexrowcenter;
+
+      .productDetailFeatureIcon {
+        font-size: 20px;
+        margin-right: 5px;
+        color: $orange;
+      }
+      .productDetailFeatureText {
+        font-size: 16px;
+        color: $navyBlue;
+        font-family: $mainFont;
+      }
+    }
+  }
+}
+.productDetailRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+
+  .productDetailPrice {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $orange;
+    padding: 10px;
+    @include flexrowcenter;
+
+    .productDetailPriceText {
+      font-weight: 600;
+      font-size: 18px;
+      color: #fff;
+      font-family: $mainFont;
+    }
+  }
+}

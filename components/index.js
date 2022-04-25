@@ -14,3 +14,4 @@ export { default as Footer } from "./Footer/Footer";
 export { default as BreadCrumb } from "./BreadCrumb/BreadCrumb";
 export { default as Filterbar } from "./Filterbar/Filterbar";
 export { default as AllProducts } from "./AllProducts/AllProducts";
+export { default as ProductDetail } from "./ProductDetail/ProductDetail";
