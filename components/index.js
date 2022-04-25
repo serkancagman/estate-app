@@ -12,3 +12,5 @@ export { default as Articles } from "./Articles/Articles";
 export { default as Blog } from "./Blog/Blog";
 export { default as Footer } from "./Footer/Footer";
 export { default as BreadCrumb } from "./BreadCrumb/BreadCrumb";
+export { default as Filterbar } from "./Filterbar/Filterbar";
+export { default as AllProducts } from "./AllProducts/AllProducts";

@@ -14,17 +14,16 @@ import {
 } from "components";
 import React from "react";
 import Head from "next/head";
-import axios from "axios";
 import { useDispatch } from "react-redux";
 import { getProducts } from "redux/Product/ProductSlice";
-export default function Home({ products }) {
+export default function Home({products}) {
   const dispatch = useDispatch();
   React.useEffect(() => {
     if (products) {
       dispatch(getProducts(products));
     }
   }, [products]);
-
+console.log(products);
   return (
     <>
       <Head>
@@ -49,11 +48,4 @@ export default function Home({ products }) {
     </>
   );
 }
-Home.getInitialProps = async () => {
-  const res = await axios.get(`${process.env.REACT_APP_API_URL}product`);
-  console.log(res.data);
 
-  return { 
-    products: res.data
-  };
-}

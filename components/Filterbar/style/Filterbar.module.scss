@@ -1,0 +1,88 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+.filterOptionWrapper {
+    width: 100%;
+    margin: 50px 0;
+  
+    .filterOptions {
+      @include flexrowjstart;
+      .filterOption {
+        margin-right: 20px;
+        padding: 10px 20px;
+        background-color: #f7f6f6;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 15px;
+          height: 15px;
+          background-color: #f7f6f6;
+          position: absolute;
+          bottom: -7.5px;
+          right: 50%;
+          transition: all 0.3s ease-in-out;
+          transform: translateX(50%) rotate(45deg);
+        }
+        .filterOptionText {
+          font-size: 16px;
+          font-weight: 550;
+          color: $navyBlue;
+        }
+      }
+    }
+  }
+  .activeOption {
+    background-color: $orange !important;
+    &::after {
+      background-color: $orange !important;
+    }
+    .filterOptionText {
+      color: #fff !important;
+    }
+  }
+  
+  .filterFormWrapper {
+    padding: 20px;
+    display: none;
+    margin: 20px 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .filterFormRent {
+    display: block;
+  }
+  .filterFormSell {
+    display: block;
+  }
+  .moneyIcon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .moneyText {
+    color: $navyBlue;
+    font-size: 16px;
+  }
+  .filterButton {
+    border: none;
+    background-color: $orange;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    outline: none;
+  
+    &:hover {
+      background-color: #f76747;
+    }
+  }
+  .filterBtn {
+    font-size: 20px;
+    color: #fff;
+  }
+  
