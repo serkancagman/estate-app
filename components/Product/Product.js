@@ -48,7 +48,7 @@ const Product = ({ product }) => {
             <h2 className={style.productTitle}>{product.title}</h2>
             <p className={style.productWidthTitle}>
               {" "}
-              Apartment:{" "}
+              {product.advertType}:{" "}
               <span className={style.productWidth}>
                 {" "}
                 {product.area} sq
@@ -82,7 +82,7 @@ const Product = ({ product }) => {
         <div className={style.productBottom}>
           <div className="d-flex justify-content-between align-items-center">
             <Rate disabled defaultValue={product.average} />
-            <Link href="/product/[id]" as={`/advert/${product._id}`}>
+            <Link href="/products/[id]" as={`/products/${product._id}`}>
               <a>
                 <button className={style.productButton}> View Details </button>
               </a>

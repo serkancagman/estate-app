@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.breadCrumb {
+  padding-top: 1rem;
+  background-color: #f7f7f7;
+}
+
+.breadCrumb .breadCrumbInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+
+.breadCrumb .breadCrumbInner .breadCrumbTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #201c2d;
+  margin-bottom: 20px;
+}
+
+.breadCrumb .breadCrumbInner .breadCrumbLink {
+  color: #201c2d;
+  font-family: "Poppins", sans-serif;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.breadCrumb .breadCrumbInner .breadCrumbLink:hover {
+  color: #fe5631;
+}
+
+.breadCrumb .breadCrumbInner .breadCrumbLinkTitle {
+  font-size: 16px;
+  color: #201c2d;
+  font-family: "Poppins", sans-serif;
+}
+
+.breadCrumb .breadCrumbInner .breadCrumbLinkTitle::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #201c2d;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+/*# sourceMappingURL=BreadCrumb.module.css.map */

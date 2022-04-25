@@ -33,6 +33,7 @@
 .productImageArea {
   position: relative;
   width: 100%;
+  font-size: 0;
 }
 
 .productImageArea .productImage {
@@ -60,6 +61,7 @@
   color: #fff;
   border-radius: 5px;
   font-weight: 550;
+  font-size: 13px;
 }
 
 .productPrice {
@@ -94,6 +96,7 @@
   transition: all 0.2s ease-in-out;
   color: #201c2d;
   font-weight: 550;
+  font-size: 17px;
 }
 
 .productInfo {

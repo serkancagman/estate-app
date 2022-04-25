@@ -1,0 +1,53 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+
+.breadCrumb{
+    padding-top: 1rem;
+    background-color: $grayBackground;
+
+    .breadCrumbInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+
+        .breadCrumbTitle{
+            font-family: $mainFont;
+            font-size: 30px;
+            font-weight: 600;
+            color: $navyBlue;
+            margin-bottom: 20px;
+        }
+        .breadCrumbLink{
+            color: $navyBlue;
+            font-family: $mainFont;
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+            &:hover{
+                color:$orange;
+            }
+        }
+        .breadCrumbLinkTitle{
+            font-size: 16px;
+            color: $navyBlue;
+            font-family: $mainFont;
+
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 7px;
+                height: 7px;
+                background-color: $navyBlue;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-bottom: 2px;
+
+            }
+        }
+    }
+}

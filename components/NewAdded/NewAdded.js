@@ -1,7 +1,11 @@
 import ProductList from "components/ProductList/ProductList";
 import React from "react";
 import style from "./style/NewAdded.module.css";
+import { useSelector } from "react-redux";
 const NewAdded = () => {
+
+  const {products, loading, error} = useSelector(state => state.products);
+  const filteredProducts = products.filter(product => !product.isOld);
   return (
     <section className={style.newAdded}>
       <div className="container">
@@ -15,10 +19,14 @@ const NewAdded = () => {
           </p>
         </div>
         <div className="row g-3">
-          <ProductList />
-          <ProductList />
-          <ProductList />
-          <ProductList />
+          {
+            filteredProducts.map((product,index) => {
+              return(
+                <ProductList key={index} product={product} />
+              )
+            })
+          }
+       
         </div>
         <div className="d-flex align-items-center justify-content-center">
           <button className={style.viewAllBtn}>VIEW ALL APARTMENTS</button>

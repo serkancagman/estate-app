@@ -26,7 +26,7 @@ export default function Home({ products }) {
   }, [products]);
 
   return (
-    <div>
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -46,7 +46,7 @@ export default function Home({ products }) {
         <Blog />
         <Footer />
       </main>
-    </div>
+    </>
   );
 }
 Home.getInitialProps = async () => {
