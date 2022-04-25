@@ -46,7 +46,7 @@ const ProductList = ({product}) => {
                 product.state +
                 " " +
                 product.city}</h4>
-             <Link href={`/products/${product._id}`}>
+             <Link href={`/adverts/${product._id}`}>
               <a className={style.productTitle}>{product.title}</a>
             
               </Link>

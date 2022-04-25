@@ -17,7 +17,7 @@ const BreadCrumb = ({ secondTitle, currentTitle }) => {
                 </Link>
                 {secondTitle && currentTitle ? (
                   <>
-                    <Link href="/">
+                    <Link href={`/${secondTitle.toLowerCase()}`}>
                       <a className={style.breadCrumbLinkTitle}>{secondTitle}</a>
                     </Link>
                     <span className={style.breadCrumbLinkTitle}>{currentTitle}</span>

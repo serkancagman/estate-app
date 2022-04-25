@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./style/AllProducts.module.css";
-import { useDispatch } from "react-redux";
 import Product from "components/Product/Product";
 import useSWR from "swr";
-import { getProducts } from "API/Api";
-const AllProducts = ({ products }) => {
-  const { data, error } = useSWR("product", getProducts);
+
+const AllProducts = () => {
+  const fetcher = (...args) => fetch(...args).then(res => res.json());
+  const { data, error } = useSWR(`${process.env.API_URL}product`, fetcher);
 
   return (
     <section className={style.allProducts}>

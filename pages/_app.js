@@ -4,7 +4,6 @@ import "antd/dist/antd.css";
 import "swiper/css";
 import { Provider } from "react-redux";
 import axios from "axios";
-
 import { store } from "redux/store";
 export default function MyApp({ Component, pageProps, products }) {
   return (
@@ -15,7 +14,7 @@ export default function MyApp({ Component, pageProps, products }) {
 }
 
 MyApp.getInitialProps = async () => {
-  const res = await axios.get(`${process.env.REACT_APP_API_URL}product`);
+  const res = await axios.get(`${process.env.API_URL}product`);
   return {
     products: res.data,
   };
