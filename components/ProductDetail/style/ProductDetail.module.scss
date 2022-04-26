@@ -129,80 +129,117 @@
   }
 }
 
-
 // DESCRIPTION BOX
 
-.descriptionBox{
-    @include productDetailBox;
-    margin: 20px 0;
+.descriptionBox {
+  @include productDetailBox;
+  margin: 20px 0;
 
-    .descriptionBoxInner{
-        padding: 25px;
-        width: 100%;
-        height: 100%;
+  .descriptionBoxInner {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
 
-        .descriptionBoxTitle{
-            font-family: $mainFont;
-            color: $navyBlue;
-            font-size: 25px;
-            font-weight: 600;
-        }
-        .descriptionBoxText{
-            color: $pColor;
-            font-size: 16px;
-            font-family: $mainFont;
-        }
+    .descriptionBoxTitle {
+      font-family: $mainFont;
+      color: $navyBlue;
+      font-size: 25px;
+      font-weight: 600;
     }
+    .descriptionBoxText {
+      color: $pColor;
+      font-size: 16px;
+      font-family: $mainFont;
+    }
+  }
 }
 
 // OVERVIEW BOX
 
-.overview{
-    @include productDetailBox;
-    margin:20px 0;
+.overview {
+  @include productDetailBox;
+  margin: 20px 0;
 
-    .overviewInner{
+  .overviewInner {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+
+    .overviewTitle {
+      font-family: $mainFont;
+      color: $navyBlue;
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+}
+
+.overviewContent {
+  @include flexrowcenter;
+  flex-wrap: wrap;
+}
+.overviewItem {
+  margin: 5px;
+  padding: 15px;
+  min-width: 150px;
+  min-height: 150px;
+  @include flexcolcenter;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
+}
+.overviewIcon {
+  font-size: 40px;
+  color: $green;
+  margin: 5px 0;
+}
+.overviewText {
+  color: $pColor;
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.overviewValue {
+  color: $orange;
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+// ADDRESS BOX
+
+.addressBox{
+    @include productDetailBox;
+    margin: 20px 0;
+    
+    .addressBoxInner {
         padding: 25px;
         width: 100%;
         height: 100%;
-
-        .overviewTitle{
-            font-family: $mainFont;
-            color: $navyBlue;
-            font-size: 25px;
-            font-weight: 600;
+    
+        .addressBoxTitle {
+        font-family: $mainFont;
+        color: $navyBlue;
+        font-size: 25px;
+        font-weight: 600;
         }
-      
+        .addressBoxItem{
+            @include flexrowbetween;
+            margin-bottom: 5px;
+            .addressBoxItemTitle{
+                font-size: 16px;
+                font-family: $mainFont;
+                margin-bottom: 0;
+                font-weight: 600;
+                
+            }
+            .addressBoxItemText{
+                font-family: $mainFont;
+                color: $pColor;
+                font-size: 16px;
+                margin-bottom: 0;
+                font-weight: 550;
+            }
+        }
     }
-}
-
-.overviewContent{
-    @include flexrowcenter;
-}
-.overviewItem{
-    margin: 5px;
-    padding: 15px;
-    min-width: 150px;
-    min-height: 150px;
-    @include flexcolcenter;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: #fff;
-}
-.overviewIcon{
-    font-size: 40px;
-    color: $green;
-    margin: 5px 0;
-}
-.overviewText{
-    color: $pColor;
-    font-family: $mainFont;
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-.overviewValue{
-    color: $orange;
-    font-family: $mainFont;
-    font-weight: 600;
-    font-size: 16px;
 }

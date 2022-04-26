@@ -8,6 +8,7 @@ import { BiBed, BiBath, BiCar } from "react-icons/bi";
 import { Rate } from "antd";
 import DescriptionBox from "./DescriptionBox";
 import Overview from "./Overview";
+import Address from "./Address";
 const ProductDetail = ({ product }) => {
   console.log(product);
   return (
@@ -124,6 +125,9 @@ const ProductDetail = ({ product }) => {
             </div>
             <div className="col-12">
                 <Overview product={product} />
+            </div>
+            <div className="col-12">
+                <Address product={product} />
             </div>
           </div>
       

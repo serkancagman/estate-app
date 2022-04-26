@@ -277,6 +277,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .overviewItem {
@@ -321,5 +323,57 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+}
+
+.addressBox {
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+  margin: 20px 0;
+}
+
+.addressBox .addressBoxInner {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.addressBox .addressBoxInner .addressBoxTitle {
+  font-family: "Poppins", sans-serif;
+  color: #201c2d;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.addressBox .addressBoxInner .addressBoxItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.addressBox .addressBoxInner .addressBoxItem .addressBoxItemTitle {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.addressBox .addressBoxInner .addressBoxItem .addressBoxItemText {
+  font-family: "Poppins", sans-serif;
+  color: #62606c;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 550;
 }
 /*# sourceMappingURL=ProductDetail.module.css.map */
