@@ -377,8 +377,82 @@
         background-color: $green;
       }
     }
-    .actionBoxButtonBroucher{
+    .actionBoxButtonBroucher {
       background-color: $navyBlue;
     }
   }
+}
+
+.agentBox {
+  @include productDetailBox;
+  margin: 20px 0;
+  .agentBoxHeader {
+    background-color: $navyBlue;
+    padding: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    .agentBoxImage {
+      margin-right: 10px;
+      font-size: 0;
+
+      .personImg {
+        border-radius: 50%;
+      }
+    }
+
+    .agentBoxName {
+      color: #fff;
+      font-family: $mainFont;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .agentBoxText {
+      color: #fff;
+      font-size: 16px;
+      font-family: $mainFont;
+    }
+    .phoneIcon {
+      color: $orange;
+      font-size: 22px;
+    }
+  }
+  .agentBoxInner {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.agentBoxFormItem {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  .agentBoxFormLabel {
+    font-size: 17px;
+    color: $navyBlue;
+    font-family: $mainFont;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .agentBoxFormInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: #efefef;
+    font-size: 16px;
+    transition: border 0.2s ease-in-out;
+    outline: none;
+    &:focus {
+      border: 2px solid $orange;
+    }
+  }
+}
+.agentBoxFormButton {
+  @include orangeButton;
+  margin: 0 !important;
 }

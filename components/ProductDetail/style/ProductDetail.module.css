@@ -592,4 +592,109 @@
 .actionBox .actionBoxInner .actionBoxButtonBroucher {
   background-color: #201c2d;
 }
+
+.agentBox {
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+  margin: 20px 0;
+}
+
+.agentBox .agentBoxHeader {
+  background-color: #201c2d;
+  padding: 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.agentBox .agentBoxHeader .agentBoxImage {
+  margin-right: 10px;
+  font-size: 0;
+}
+
+.agentBox .agentBoxHeader .agentBoxImage .personImg {
+  border-radius: 50%;
+}
+
+.agentBox .agentBoxHeader .agentBoxName {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.agentBox .agentBoxHeader .agentBoxText {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.agentBox .agentBoxHeader .phoneIcon {
+  color: #fe5631;
+  font-size: 22px;
+}
+
+.agentBox .agentBoxInner {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.agentBoxFormItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+.agentBoxFormItem .agentBoxFormLabel {
+  font-size: 17px;
+  color: #201c2d;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.agentBoxFormItem .agentBoxFormInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: #efefef;
+  font-size: 16px;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  outline: none;
+}
+
+.agentBoxFormItem .agentBoxFormInput:focus {
+  border: 2px solid #fe5631;
+}
+
+.agentBoxFormButton {
+  background-color: #fe5631;
+  padding: 15px 25px;
+  color: #fff;
+  font-weight: 550;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 50px 0;
+  margin: 0 !important;
+}
+
+.agentBoxFormButton:hover {
+  background-color: #f3775c !important;
+}
 /*# sourceMappingURL=ProductDetail.module.css.map */
