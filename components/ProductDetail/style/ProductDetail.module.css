@@ -124,7 +124,7 @@
   font-weight: 600;
 }
 
-.productDetailLeft .productDetailFeature {
+.productDetailFeature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +143,7 @@
   width: 100%;
 }
 
-.productDetailLeft .productDetailFeature .productDetailFeatureItem {
+.productDetailFeature .productDetailFeatureItem {
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,13 +160,13 @@
           align-items: center;
 }
 
-.productDetailLeft .productDetailFeature .productDetailFeatureItem .productDetailFeatureIcon {
+.productDetailFeature .productDetailFeatureItem .productDetailFeatureIcon {
   font-size: 20px;
   margin-right: 5px;
   color: #fe5631;
 }
 
-.productDetailLeft .productDetailFeature .productDetailFeatureItem .productDetailFeatureText {
+.productDetailFeature .productDetailFeatureItem .productDetailFeatureText {
   font-size: 16px;
   color: #201c2d;
   font-family: "Poppins", sans-serif;
@@ -457,5 +457,87 @@
   transition: all 0.2s ease-in-out;
   color: #1dc295;
   font-size: 20px;
+}
+
+.planBox {
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+  margin: 20px 0;
+}
+
+.planBox .planBoxInner {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.planBox .planBoxInner .planBoxHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planBox .planBoxInner .planBoxTitle {
+  font-family: "Poppins", sans-serif;
+  color: #201c2d;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.planBox .planBoxInner .productDetailFeature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.planBox .planBoxInner .productDetailFeature .productDetailFeatureItem {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planBox .planBoxInner .productDetailFeature .productDetailFeatureItem .productDetailFeatureIcon {
+  font-size: 18px;
+  margin-right: 5px;
+  color: #fe5631;
+}
+
+.planBox .planBoxInner .productDetailFeature .productDetailFeatureItem .productDetailFeatureText {
+  font-size: 15px;
+  color: #201c2d;
+  font-family: "Poppins", sans-serif;
+}
+
+.planBox .planBoxInner .planBoxImage {
+  margin-top: 20px;
+  background-color: #e4fff3;
 }
 /*# sourceMappingURL=ProductDetail.module.css.map */

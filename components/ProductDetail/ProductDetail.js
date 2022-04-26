@@ -10,6 +10,7 @@ import DescriptionBox from "./DescriptionBox";
 import Overview from "./Overview";
 import Address from "./Address";
 import Features from "./Features";
+import Plan from "./Plan";
 const ProductDetail = ({ product }) => {
   console.log(product);
   return (
@@ -132,6 +133,9 @@ const ProductDetail = ({ product }) => {
             </div>
             <div className="col-12">
               <Features product={product} />
+            </div>
+            <div className="col-12">
+              <Plan product={product} />
             </div>
           </div>
       

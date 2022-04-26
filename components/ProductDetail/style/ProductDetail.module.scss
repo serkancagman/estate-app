@@ -83,7 +83,9 @@
       font-weight: 600;
     }
   }
-  .productDetailFeature {
+  
+}
+.productDetailFeature {
     @include flexrowjstart;
     flex-wrap: wrap;
     width: 100%;
@@ -104,7 +106,6 @@
       }
     }
   }
-}
 .productDetailRight {
   display: flex;
   flex-direction: column;
@@ -296,4 +297,54 @@
       }
     }
   }
+}
+
+
+// PLAN BOX
+
+.planBox{
+    @include productDetailBox;
+    margin: 20px 0;
+    
+    .planBoxInner {
+        padding: 25px;
+        width: 100%;
+        height: 100%;
+    .planBoxHeader{
+        @include flexrowbetween;
+    }
+        .planBoxTitle {
+        font-family: $mainFont;
+        color: $navyBlue;
+        font-size: 25px;
+        font-weight: 600;
+        }
+        .productDetailFeature {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            width: 100%;
+        
+            .productDetailFeatureItem {
+              margin-right: 10px;
+              @include flexrowcenter;
+        
+              .productDetailFeatureIcon {
+                font-size: 18px;
+                margin-right: 5px;
+                color: $orange;
+              }
+              .productDetailFeatureText {
+                font-size: 15px;
+                color: $navyBlue;
+                font-family: $mainFont;
+              }
+            }
+          }
+
+          .planBoxImage{
+              margin-top: 20px;
+              background-color: rgb(228, 255, 243);
+          }
+    }
 }
