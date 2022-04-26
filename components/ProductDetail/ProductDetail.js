@@ -46,90 +46,92 @@ const ProductDetail = ({ product }) => {
         </div>
         <div className="row g-3">
           <div className="col-lg-8 col-md-12">
-              <div className="col-12">
-            <div className={style.productDetailHeader}>
-              <div className={style.productDetailInner}>
-                <div className={style.productDetailLeft}>
-                  <div className={style.productDetailTags}>
-                    <span
-                      className={`${style.productDetailTag} ${style.advertTag}`}
-                    >
-                      {product.advertStatus === "Sell" ? "SELL" : "RENT"}{" "}
-                    </span>
-                    {product.isFeatured && (
+            <div className="col-12">
+              <div className={style.productDetailHeader}>
+                <div className={style.productDetailInner}>
+                  <div className={style.productDetailLeft}>
+                    <div className={style.productDetailTags}>
                       <span
-                        className={`${style.productDetailTag} ${style.featuredTag}`}
+                        className={`${style.productDetailTag} ${style.advertTag}`}
                       >
-                        FEATURED
+                        {product.advertStatus === "Sell" ? "SELL" : "RENT"}{" "}
                       </span>
-                    )}
-                    {!product.isOld && (
-                      <span
-                        className={`${style.productDetailTag} ${style.isNewTag}`}
-                      >
-                        NEW
+                      {product.isFeatured && (
+                        <span
+                          className={`${style.productDetailTag} ${style.featuredTag}`}
+                        >
+                          FEATURED
+                        </span>
+                      )}
+                      {!product.isOld && (
+                        <span
+                          className={`${style.productDetailTag} ${style.isNewTag}`}
+                        >
+                          NEW
+                        </span>
+                      )}
+                    </div>
+                    <h6 className={style.productDetailAddress}>
+                      {product.street +
+                        " St." +
+                        " " +
+                        product.state +
+                        ", " +
+                        product.city}
+                    </h6>
+                    <h3 className={style.productDetailTitle}>
+                      {product.title}
+                    </h3>
+                    <div className={style.productDetailArea}>
+                      <span className={style.productDetailAreaText}>
+                        {product.advertType}:{" "}
                       </span>
-                    )}
-                  </div>
-                  <h6 className={style.productDetailAddress}>
-                    {product.street +
-                      " St." +
-                      " " +
-                      product.state +
-                      ", " +
-                      product.city}
-                  </h6>
-                  <h3 className={style.productDetailTitle}>{product.title}</h3>
-                  <div className={style.productDetailArea}>
-                    <span className={style.productDetailAreaText}>
-                      {product.advertType}:{" "}
-                    </span>
-                    <span className={style.productDetailAreaTotal}>
-                      {product.area} sq
-                    </span>
-                  </div>
-                  <div className={style.productDetailFeature}>
-                    <div className={style.productDetailFeatureItem}>
-                      <BiBed className={style.productDetailFeatureIcon} />
-                      <span className={style.productDetailFeatureText}>
-                        {product.rooms} Bedrooms
+                      <span className={style.productDetailAreaTotal}>
+                        {product.area} sq
                       </span>
                     </div>
-                    <div className={style.productDetailFeatureItem}>
-                      <BiBath className={style.productDetailFeatureIcon} />
-                      <span className={style.productDetailFeatureText}>
-                        {product.bathrooms} Bathrooms
-                      </span>
-                    </div>
-                    <div className={style.productDetailFeatureItem}>
-                      <BiCar className={style.productDetailFeatureIcon} />
-                      <span className={style.productDetailFeatureText}>
-                        {product.parkCapacity} Park Capacity
-                      </span>
+                    <div className={style.productDetailFeature}>
+                      <div className={style.productDetailFeatureItem}>
+                        <BiBed className={style.productDetailFeatureIcon} />
+                        <span className={style.productDetailFeatureText}>
+                          {product.rooms} Bedrooms
+                        </span>
+                      </div>
+                      <div className={style.productDetailFeatureItem}>
+                        <BiBath className={style.productDetailFeatureIcon} />
+                        <span className={style.productDetailFeatureText}>
+                          {product.bathrooms} Bathrooms
+                        </span>
+                      </div>
+                      <div className={style.productDetailFeatureItem}>
+                        <BiCar className={style.productDetailFeatureIcon} />
+                        <span className={style.productDetailFeatureText}>
+                          {product.parkCapacity} Park Capacity
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className={style.productDetailRight}>
-                  <div className={style.productDetailPrice}>
-                    <span className={style.productDetailPriceText}>
-                      ${product.price}
-                    </span>
-                  </div>
-                  <div className={style.productDetailAverage}>
-                    <Rate disabled defaultValue={product.average} />
+                  <div className={style.productDetailRight}>
+                    <div className={style.productDetailPrice}>
+                      <span className={style.productDetailPriceText}>
+                        ${product.price}
+                      </span>
+                    </div>
+                    <div className={style.productDetailAverage}>
+                      <Rate disabled defaultValue={product.average} />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="col-12">
+              <DescriptionBox />
             </div>
             <div className="col-12">
-            <DescriptionBox />
+              <Overview product={product} />
             </div>
             <div className="col-12">
-                <Overview product={product} />
-            </div>
-            <div className="col-12">
-                <Address product={product} />
+              <Address product={product} />
             </div>
             <div className="col-12">
               <Features product={product} />
@@ -138,7 +140,23 @@ const ProductDetail = ({ product }) => {
               <Plan product={product} />
             </div>
           </div>
-      
+          <div className="col-lg-4 col-md-12">
+            <div className="col-12">
+              <div className={style.actionBox}>
+                <div className={style.actionBoxInner}>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <button className={style.actionBoxButton}> SHARE </button>
+                    <button
+                      className={`${style.actionBoxButton} ${style.actionBoxButtonBroucher}`}
+                    >
+                      {" "}
+                      Download Broucher{" "}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

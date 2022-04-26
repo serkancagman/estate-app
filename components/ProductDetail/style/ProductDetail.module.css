@@ -540,4 +540,56 @@
   margin-top: 20px;
   background-color: #e4fff3;
 }
+
+.actionBox {
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+  margin: 20px 0;
+}
+
+.actionBox .actionBoxInner {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  background-color: #e4fff3;
+}
+
+.actionBox .actionBoxInner .actionBoxButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  height: 50px;
+  background-color: #fe5631;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.actionBox .actionBoxInner .actionBoxButton:hover {
+  background-color: #1dc295;
+}
+
+.actionBox .actionBoxInner .actionBoxButtonBroucher {
+  background-color: #201c2d;
+}
 /*# sourceMappingURL=ProductDetail.module.css.map */

@@ -83,29 +83,28 @@
       font-weight: 600;
     }
   }
-  
 }
 .productDetailFeature {
-    @include flexrowjstart;
-    flex-wrap: wrap;
-    width: 100%;
+  @include flexrowjstart;
+  flex-wrap: wrap;
+  width: 100%;
 
-    .productDetailFeatureItem {
-      margin-right: 10px;
-      @include flexrowcenter;
+  .productDetailFeatureItem {
+    margin-right: 10px;
+    @include flexrowcenter;
 
-      .productDetailFeatureIcon {
-        font-size: 20px;
-        margin-right: 5px;
-        color: $orange;
-      }
-      .productDetailFeatureText {
-        font-size: 16px;
-        color: $navyBlue;
-        font-family: $mainFont;
-      }
+    .productDetailFeatureIcon {
+      font-size: 20px;
+      margin-right: 5px;
+      color: $orange;
+    }
+    .productDetailFeatureText {
+      font-size: 16px;
+      color: $navyBlue;
+      font-family: $mainFont;
     }
   }
+}
 .productDetailRight {
   display: flex;
   flex-direction: column;
@@ -299,52 +298,87 @@
   }
 }
 
-
 // PLAN BOX
 
-.planBox{
-    @include productDetailBox;
-    margin: 20px 0;
-    
-    .planBoxInner {
-        padding: 25px;
-        width: 100%;
-        height: 100%;
-    .planBoxHeader{
-        @include flexrowbetween;
-    }
-        .planBoxTitle {
-        font-family: $mainFont;
-        color: $navyBlue;
-        font-size: 25px;
-        font-weight: 600;
-        }
-        .productDetailFeature {
-            display: flex;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-            width: 100%;
-        
-            .productDetailFeatureItem {
-              margin-right: 10px;
-              @include flexrowcenter;
-        
-              .productDetailFeatureIcon {
-                font-size: 18px;
-                margin-right: 5px;
-                color: $orange;
-              }
-              .productDetailFeatureText {
-                font-size: 15px;
-                color: $navyBlue;
-                font-family: $mainFont;
-              }
-            }
-          }
+.planBox {
+  @include productDetailBox;
+  margin: 20px 0;
 
-          .planBoxImage{
-              margin-top: 20px;
-              background-color: rgb(228, 255, 243);
-          }
+  .planBoxInner {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    .planBoxHeader {
+      @include flexrowbetween;
     }
+    .planBoxTitle {
+      font-family: $mainFont;
+      color: $navyBlue;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .productDetailFeature {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .productDetailFeatureItem {
+        margin-right: 10px;
+        @include flexrowcenter;
+
+        .productDetailFeatureIcon {
+          font-size: 18px;
+          margin-right: 5px;
+          color: $orange;
+        }
+        .productDetailFeatureText {
+          font-size: 15px;
+          color: $navyBlue;
+          font-family: $mainFont;
+        }
+      }
+    }
+
+    .planBoxImage {
+      margin-top: 20px;
+      background-color: rgb(228, 255, 243);
+    }
+  }
+}
+
+// ACTION BOX
+
+.actionBox {
+  @include productDetailBox;
+  margin: 20px 0;
+
+  .actionBoxInner {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 255, 243);
+    .actionBoxButton {
+      @include flexrowcenter;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0 15px;
+      height: 50px;
+      background-color: $orange;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px;
+      font-family: $mainFont;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: $green;
+      }
+    }
+    .actionBoxButtonBroucher{
+      background-color: $navyBlue;
+    }
+  }
 }
