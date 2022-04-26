@@ -12,6 +12,7 @@ import Address from "./Address";
 import Features from "./Features";
 import Plan from "./Plan";
 import AgentBox from "./AgentBox";
+import FeaturedProperty from "./FeaturedProperty";
 const ProductDetail = ({ product }) => {
   console.log(product);
   return (
@@ -160,6 +161,9 @@ const ProductDetail = ({ product }) => {
             <div className="col-12">
               <AgentBox />  
             </div>
+            <div className="col-12">
+              <FeaturedProperty/>
+              </div>
           </div>
         </div>
       </div>

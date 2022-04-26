@@ -82,7 +82,7 @@ const Product = ({ product }) => {
         <div className={style.productBottom}>
           <div className="d-flex justify-content-between align-items-center">
             <Rate disabled defaultValue={product.average} />
-            <Link href={`/adverts/${product._id}`}>
+            <Link href={`/properties/${product._id}`}>
               <a>
                 <button className={style.productButton}> View Details </button>
               </a>

@@ -12,7 +12,7 @@ const products = () => {
 
       <main>
         <Header />
-        <BreadCrumb currentTitle="Adverts" />
+        <BreadCrumb currentTitle="Properties" />
         <Filterbar />
         <AllProducts />
         <Footer />

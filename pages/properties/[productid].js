@@ -16,7 +16,7 @@ const Product = () => {
       </Head>
       <main>
         <Header />
-        <BreadCrumb secondTitle="Adverts" currentTitle="Advert Details" />
+        <BreadCrumb secondTitle="Properties" currentTitle="Property Details" />
         {data && <ProductDetail product={data} />}
         <Footer />
       </main>
