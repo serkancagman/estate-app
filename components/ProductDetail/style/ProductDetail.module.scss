@@ -208,38 +208,92 @@
 
 // ADDRESS BOX
 
-.addressBox{
-    @include productDetailBox;
-    margin: 20px 0;
-    
-    .addressBoxInner {
-        padding: 25px;
-        width: 100%;
-        height: 100%;
-    
-        .addressBoxTitle {
-        font-family: $mainFont;
-        color: $navyBlue;
-        font-size: 25px;
-        font-weight: 600;
-        }
-        .addressBoxItem{
-            @include flexrowbetween;
-            margin-bottom: 5px;
-            .addressBoxItemTitle{
-                font-size: 16px;
-                font-family: $mainFont;
-                margin-bottom: 0;
-                font-weight: 600;
-                
-            }
-            .addressBoxItemText{
-                font-family: $mainFont;
-                color: $pColor;
-                font-size: 16px;
-                margin-bottom: 0;
-                font-weight: 550;
-            }
-        }
+.addressBox {
+  @include productDetailBox;
+  margin: 20px 0;
+
+  .addressBoxInner {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+
+    .addressBoxTitle {
+      font-family: $mainFont;
+      color: $navyBlue;
+      font-size: 25px;
+      font-weight: 600;
     }
+    .addressBoxItem {
+      @include flexrowbetween;
+      margin-bottom: 5px;
+      .addressBoxItemTitle {
+        font-size: 16px;
+        font-family: $mainFont;
+        margin-bottom: 0;
+        font-weight: 600;
+      }
+      .addressBoxItemText {
+        font-family: $mainFont;
+        color: $pColor;
+        font-size: 16px;
+        margin-bottom: 0;
+        font-weight: 550;
+      }
+    }
+  }
+}
+
+// FEATURES BOX
+
+.featuresBox {
+  @include productDetailBox;
+  margin: 20px 0;
+
+  .featuresBoxInner {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+
+    .featuresBoxTitle {
+      font-family: $mainFont;
+      color: $navyBlue;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .featuresBoxItem {
+      @include flexrowjstart;
+      margin-bottom: 5px;
+
+      &:hover {
+        .featuresBoxIconWrpper {
+          background-color: $orange;
+
+          .featuresBoxIcon {
+            color: #fff;
+          }
+        }
+      }
+      .featuresBoxItemTitle {
+        font-size: 16px;
+        font-family: $mainFont;
+        margin-bottom: 0;
+        font-weight: 600;
+      }
+      .featuresBoxIconWrpper {
+        background-color: rgb(228, 255, 243);
+        width: 30px;
+        margin-right: 5px;
+        @include flexrowcenter;
+        transition: all 0.2s ease-in-out;
+        height: 30px;
+        border-radius: 50%;
+
+        .featuresBoxIcon {
+          transition: all 0.2s ease-in-out;
+          color: $green;
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
