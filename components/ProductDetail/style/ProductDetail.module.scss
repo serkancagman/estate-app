@@ -498,6 +498,10 @@
         font-family: $mainFont;
         color: $navyBlue;
         font-weight: 600;
+        transition: all .2s ease-in-out;
+        &:hover{
+          color: $orange;
+        }
       }
       .featuredPropertyIcon {
         color: $orange;

@@ -51,7 +51,7 @@ const ProductList = ({ product }) => {
                   " " +
                   product.city}
               </h4>
-              <Link href={`/adverts/${product._id}`}>
+              <Link href={`/properties/${product._id}`}>
                 <a className={style.productTitle}>{product.title}</a>
               </Link>
               <p className={style.productWidthTitle}>

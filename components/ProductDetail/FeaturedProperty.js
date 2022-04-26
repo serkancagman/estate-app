@@ -4,6 +4,7 @@ import useSWR from "swr";
 import style from "./style/ProductDetail.module.css";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Image from "next/image";
+import Link from "next/link";
 const FeaturedProperty = () => {
   const fetcher = (url) => axios.get(url).then((res) => res.data);
   const { data, error } = useSWR(`${process.env.API_URL}product`, fetcher);
@@ -27,10 +28,12 @@ const FeaturedProperty = () => {
                       />
                     </div>
                     <div className="d-flex flex-column w-100 justify-content-between align-items-start">
-                      <h6 className={style.featuredPropertySubTitle}>
-                        {" "}
-                        {product.title}
-                      </h6>
+                      <Link href={`/properties/${product._id}`}>
+                        <a className={style.featuredPropertySubTitle}>
+                          {" "}
+                          {product.title}
+                        </a>
+                      </Link>
                       <div className="d-flex align-items-center mb-1 justify-content-start">
                         <HiOutlineLocationMarker
                           className={style.featuredPropertyIcon}

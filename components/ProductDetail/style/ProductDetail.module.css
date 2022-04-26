@@ -756,6 +756,12 @@
   font-family: "Poppins", sans-serif;
   color: #201c2d;
   font-weight: 600;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.featuredProperty .featuredPropertyInner .featuredPropertyItem .featuredPropertySubTitle:hover {
+  color: #fe5631;
 }
 
 .featuredProperty .featuredPropertyInner .featuredPropertyItem .featuredPropertyIcon {
