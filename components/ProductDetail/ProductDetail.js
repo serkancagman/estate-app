@@ -158,7 +158,7 @@ const ProductDetail = ({ product }) => {
               </div>
             </div>
             <div className="col-12">
-              <AgentBox />
+              <AgentBox />  
             </div>
           </div>
         </div>
