@@ -32,16 +32,17 @@
     border-radius: 10px;
     background-color: #efefef;
     margin: 10px 0;
-    transition: all 0.3s ease-in-out;
-    outline: 2px solid transparent;
+    transition: border 0.3s ease-in-out;
+    outline: none;
+
     &:focus {
-      outline: 2px solid $orange;
+      border: 2px solid #4fd3c4;
     }
   }
 }
 .formButton {
   padding: 10px 15px;
-  border: none;
+  border: 2px solid transparent;
   outline: none;
   background-color: $orange;
   color: #fff;
@@ -49,4 +50,15 @@
   font-family: $mainFont;
   border-radius: 5px;
   font-size: 17px;
+}
+.errorInput {
+  border: 2px solid #ff3f00 !important;
+}
+.errorMessage {
+  color: #ff3f00;
+  display: inline-block;
+  font-family: $mainFont;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
