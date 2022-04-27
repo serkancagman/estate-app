@@ -49,7 +49,7 @@ const Filterbar = () => {
           }}
           autoComplete="off"
         >
-          <div className="row g-3 align-items-center">
+          <div className="row g-3 justify-content-center align-items-center">
             <div className="col-lg-3 col-md-6">
               <Form.Item>
                 <Select
@@ -127,7 +127,7 @@ const Filterbar = () => {
           }}
           autoComplete="off"
         >
-          <div className="row g-3 align-items-center">
+          <div className="row g-3 align-items-center justify-content-center">
             <div className="col-lg-3 col-md-6">
               <Form.Item>
                 <Select

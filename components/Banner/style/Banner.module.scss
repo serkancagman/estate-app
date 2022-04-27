@@ -4,7 +4,7 @@
   @include sectionPM;
   .bannerInner {
     position: relative;
-    padding: 50px 0;
+   
   }
 }
 .bannerContent {
@@ -20,6 +20,7 @@
 .bannerText {
   color: $pColor;
   font-size: 18px;
+  font-family: $mainFont;
 }
 
 .bannerImageWrapper {
@@ -38,4 +39,18 @@
   height: 500px;
   z-index: -1;
   border-radius: 30px;
+}
+
+@media screen and (max-width:767.90px) {
+  .banner{
+    overflow: hidden;
+  }
+ .bannerTitle{
+  font-size: 30px;
+ }
+ .bannerText{
+   font-size: 16px !important;
+   
+ }
+  
 }

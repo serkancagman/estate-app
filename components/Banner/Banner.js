@@ -2,6 +2,7 @@ import React from "react";
 import style from "./style/Banner.module.css";
 import bannerImage from "assets/banner/banner-1.jpg";
 import Image from "next/image";
+import Filterbar from "components/Filterbar/Filterbar";
 
 const Banner = () => {
   return (
@@ -22,7 +23,7 @@ const Banner = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
+            <div className="col-lg-6 col-md-12">
               <div className={style.bannerImageWrapper}>
                 <Image
                   src={bannerImage}
@@ -35,6 +36,7 @@ const Banner = () => {
             </div>
           </div>
           <div className={style.bannerFade}></div>
+          <Filterbar />
         </div>
       </div>
     </section>
