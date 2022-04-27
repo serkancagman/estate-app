@@ -1,109 +1,20 @@
 @import "../../../style/variables.scss";
 @import "../../../style/mixins.scss";
 
-
-.blog{
-    @include sectionPM;
-    background-color: #fff;
-}
-.blogHeader{
-    margin: 30px;
+.blog {
+  @include sectionPM;
+  .blogHeader {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .blogTitle {
+    @include mainTitle;
     text-align: center;
-
-    .blogTitle{
-        @include mainTitle;
-    }
-    .blogText{
-        color: $pColor;
-        @include subTitle;
-        font-size: 17px;
-    }
-}
-
-
-.blogItem{
-    background-color: #fff;
-    margin: 10px;
-    background-color: #fff;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-    border-radius: 10px;
-
-    &:hover{
-        .blogItemTagText{
-            background-color: $orange !important;
-        }
-    }
-
-    .blogItemInner{
-        padding: 10px;
-        width: 100%;
-        .blogItemImg{
-            width: 100%;
-            margin-bottom: 10px;
-
-            .itemImg{
-                border-radius: 10px;
-            }
-        }
-    }
-}
-.blogItemTag{
-    @include flexrowjstart;
-    margin: 20px 0;
-
-    .blogItemTagText{
-        color: #fff;
-        padding: 5px 10px;
-        background-color: $green;
-        font-family: $mainFont;
-        font-weight: 600;
-        border-radius: 5px;
-        transition: all .2s ease-in-out;
-    }
-}
-.blogItemHeader{
-    margin-bottom: 10px;
-
-    .blogItemTitle{
-        font-size: 20px;
-        font-weight: 600;
-        font-family: $mainFont;
-        color: $navyBlue;
-    }
-}
-.blogItemFooter{
-    padding: 10px;
-    border-top:1px solid #e5e5e5;
-    @include flexrowbetween; 
-}
-
-.blogItemFooterLeft{
-    margin:5px;
-    @include flexrowcenter;
-}
-.ownerImg{
-    border-radius: 50%;
-}
-.blogItemOwner{
-    margin: 0 10px;
-    color: $navyBlue;
-    font-size: 15px;
-    font-family: $mainFont;
-}
-.blogItemFooterRight{
-    @include flexrowcenter;
-    margin:5px;
-    
-
-    .blogItemIcon{
-        font-size: 18px;
-        color: $orange;
-        margin: 0 10px;
-    }
-    .blogItemDate{
-        font-size: 16px;
-        color: #999;
-        font-family: $mainFont;
-    }
+  }
+  .blogText {
+    @include subTitle;
+    color: $pColor;
+    text-align: center;
+    font-size: 17px;
+  }
 }

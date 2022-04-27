@@ -9,8 +9,8 @@ import {
   Partners,
   Solution,
   Articles,
-  Blog,
   Footer,
+  BlogHome,
 } from "components";
 import React from "react";
 import Head from "next/head";
@@ -42,7 +42,7 @@ console.log(products);
         <Case />
         <Neighborhood />
         <Articles />
-        <Blog />
+        <BlogHome />
         <Footer />
       </main>
     </>
