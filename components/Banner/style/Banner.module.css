@@ -46,9 +46,15 @@
   border-radius: 30px;
 }
 
+@media screen and (max-width: 1023.99px) and (min-width: 768px) {
+  .bannerFade {
+    right: -20px;
+  }
+}
+
 @media screen and (max-width: 767.9px) {
-  .banner {
-    overflow: hidden;
+  .bannerFade {
+    display: none;
   }
   .bannerTitle {
     font-size: 30px;

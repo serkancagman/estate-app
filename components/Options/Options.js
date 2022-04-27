@@ -9,7 +9,7 @@ const Options = () => {
     <section className={style.options}>
       <div className="container">
         <div className="row g-3">
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-12">
             <div className={style.optionInner}>
               <div className="d-flex flex-column justify-content-between align-items-start">
                 ,
@@ -24,7 +24,7 @@ const Options = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4"> 
+          <div className="col-lg-4 col-md-"> 
           <div className={style.optionInner}>
               <div className="d-flex flex-column justify-content-between align-items-start">
                 ,
@@ -39,7 +39,7 @@ const Options = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-">
           <div className={style.optionInner}>
               <div className="d-flex flex-column justify-content-between align-items-start">
                 ,

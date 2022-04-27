@@ -22,22 +22,29 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0;
 }
 
 .partnersItem {
   background-color: #fff;
   list-style: none;
-  padding: 15px;
+  padding: 25px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   margin: 3px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .partnersItem {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=Partners.module.css.map */

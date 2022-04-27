@@ -8,14 +8,22 @@
   @include mainTitle;
 }
 .partnersList {
-  @include flexrowjstart;
+  @include flexrowcenter;
   flex-wrap: wrap;
+  padding: 0;
 }
 .partnersItem {
   background-color: #fff;
   list-style: none;
-  padding: 15px;
+  padding: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   margin: 3px;
+}
+@media screen and (max-width:767.90px) {
+
+.partnersItem{
+  padding: 0;
+}
+
 }

@@ -4,7 +4,6 @@
   @include sectionPM;
   .bannerInner {
     position: relative;
-   
   }
 }
 .bannerContent {
@@ -40,17 +39,19 @@
   z-index: -1;
   border-radius: 30px;
 }
-
-@media screen and (max-width:767.90px) {
-  .banner{
-    overflow: hidden;
+@media screen and (max-width: 1023.99px) and (min-width: 768px) {
+  .bannerFade {
+    right: -20px;
   }
- .bannerTitle{
-  font-size: 30px;
- }
- .bannerText{
-   font-size: 16px !important;
-   
- }
-  
+}
+@media screen and (max-width: 767.9px) {
+  .bannerFade {
+    display: none;
+  }
+  .bannerTitle {
+    font-size: 30px;
+  }
+  .bannerText {
+    font-size: 16px !important;
+  }
 }
