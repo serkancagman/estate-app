@@ -756,8 +756,8 @@
   font-family: "Poppins", sans-serif;
   color: #201c2d;
   font-weight: 600;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .featuredProperty .featuredPropertyInner .featuredPropertyItem .featuredPropertySubTitle:hover {
@@ -787,5 +787,56 @@
   color: #201c2d;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+}
+
+.productTags {
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+  margin: 20px 0;
+}
+
+.productTags .productTagsInner {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.productTags .productTagsInner .productTagsTitle {
+  font-family: "Poppins", sans-serif;
+  color: #201c2d;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.productTags .productTagsInner .productTagsItem {
+  margin-right: 10px;
+  background-color: #1dc295;
+  padding: 10px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.productTags .productTagsInner .productTagsItem:hover {
+  background-color: #fe5631;
 }
 /*# sourceMappingURL=ProductDetail.module.css.map */
