@@ -13,7 +13,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 const AgentItem = ({item}) => {
   return (
-    <div className="col-lg-4 col-md-6">
+  
       <div className={style.agentItem}>
         <div className={style.agentItemInner}>
           <div className={style.agentImageWrapper}>
@@ -61,7 +61,7 @@ const AgentItem = ({item}) => {
           </div>
         </div>
       </div>
-    </div>
+
   );
 };
 

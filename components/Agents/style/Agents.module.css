@@ -27,7 +27,7 @@
   font-size: 17px;
 }
 
-.agents .agentItem {
+.agentItem {
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
           box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   border-radius: 5px;
@@ -35,25 +35,25 @@
   height: 100%;
 }
 
-.agents .agentItem:hover .agentSocial {
+.agentItem:hover .agentSocial {
   opacity: 1 !important;
 }
 
-.agents .agentItem .agentItemInner {
+.agentItem .agentItemInner {
   padding: 15px;
 }
 
-.agents .agentItem .agentItemInner .agentImageWrapper {
+.agentItem .agentItemInner .agentImageWrapper {
   position: relative;
   font-size: 0;
   width: 100%;
 }
 
-.agents .agentItem .agentItemInner .agentImageWrapper .agentImage {
+.agentItem .agentItemInner .agentImageWrapper .agentImage {
   border-radius: 5px;
 }
 
-.agents .agentItem .agentItemInner .agentImageWrapper .agentSocial {
+.agentItem .agentItemInner .agentImageWrapper .agentSocial {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -80,7 +80,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.agents .agentItem .agentItemInner .agentImageWrapper .agentSocial .agentSocialLink {
+.agentItem .agentItemInner .agentImageWrapper .agentSocial .agentSocialLink {
   font-size: 20px;
   padding: 10px;
   background-color: #201c2d;
@@ -106,16 +106,16 @@
   transition: all 0.3s ease-in-out;
 }
 
-.agents .agentItem .agentItemInner .agentImageWrapper .agentSocial .agentSocialLink:hover {
+.agentItem .agentItemInner .agentImageWrapper .agentSocial .agentSocialLink:hover {
   background-color: #fe5631;
 }
 
-.agents .agentItem .agentItemInner .agentName {
+.agentItem .agentItemInner .agentName {
   font-family: "Poppins", sans-serif;
   color: #201c2d;
 }
 
-.agents .agentItem .agentItemInner .agentEmail {
+.agentItem .agentItemInner .agentEmail {
   font-size: 20px;
   width: 40px;
   height: 40px;
@@ -140,35 +140,35 @@
   transition: all 0.3s ease-in-out;
 }
 
-.agents .agentItem .agentItemInner .agentEmail:hover {
+.agentItem .agentItemInner .agentEmail:hover {
   background-color: #fe5631;
   color: #fff;
 }
 
-.agents .agentItem .agentItemInner .agentProperties {
+.agentItem .agentItemInner .agentProperties {
   color: #62606c;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
 
-.agents .agentBottom {
+.agentBottom {
   padding: 15px;
   border-top: 1px solid #e7e7e7;
 }
 
-.agents .agentBottom .phoneIcon {
+.agentBottom .phoneIcon {
   color: #fe5631;
   font-size: 18px;
   margin-right: 5px;
 }
 
-.agents .agentBottom .agentPhone {
+.agentBottom .agentPhone {
   color: #201c2d;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
-.agents .agentBottom .agentButton {
+.agentBottom .agentButton {
   padding: 10px 15px;
   border: none;
   outline: none;
@@ -182,7 +182,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.agents .agentBottom .agentButton:hover {
+.agentBottom .agentButton:hover {
   background-color: #fe5631;
 }
 /*# sourceMappingURL=Agents.module.css.map */

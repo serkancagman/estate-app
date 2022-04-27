@@ -21,3 +21,4 @@ export { default as Agents } from "./Agents/Agents";
 export { default as AboutBanner } from "./AboutBanner/AboutBanner";
 export { default as AboutServices } from "./AboutServices/AboutServices";
 export { default as Achievement } from "./Achievement/Achievement";
+export { default as AboutAgents } from "./AboutAgents/AboutAgents";

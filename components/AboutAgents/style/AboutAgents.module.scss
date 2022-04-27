@@ -1,0 +1,25 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+.aboutAgents {
+  @include sectionPM;
+
+  .aboutAgentsHeader {
+    padding: 10px 0;
+    width: 100%;
+
+    .aboutAgentsTitle {
+      @include mainTitle;
+      text-align: center;
+    }
+    .aboutAgentsSubTitle {
+      @include subTitle;
+      color: $pColor;
+      text-align: center;
+      font-size: 17px;
+    }
+  }
+}
+.agentItem{
+    margin: 0 10px;
+}

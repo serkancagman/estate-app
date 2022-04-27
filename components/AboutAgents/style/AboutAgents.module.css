@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.aboutAgents {
+  margin: 40px 0;
+  padding: 40px 0;
+}
+
+.aboutAgents .aboutAgentsHeader {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.aboutAgents .aboutAgentsHeader .aboutAgentsTitle {
+  color: #201c2d;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.aboutAgents .aboutAgentsHeader .aboutAgentsSubTitle {
+  margin: auto;
+  max-width: 700px;
+  color: #62606c;
+  text-align: center;
+  font-size: 17px;
+}
+
+.agentItem {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=AboutAgents.module.css.map */

@@ -20,113 +20,114 @@
     }
   }
 
-  .agentItem {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    &:hover {
-      .agentSocial {
-        opacity: 1 !important;
-      }
+  
+}
+.agentItem {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  &:hover {
+    .agentSocial {
+      opacity: 1 !important;
     }
-    .agentItemInner {
-      padding: 15px;
+  }
+  .agentItemInner {
+    padding: 15px;
 
-      .agentImageWrapper {
-        position: relative;
-        font-size: 0;
+    .agentImageWrapper {
+      position: relative;
+      font-size: 0;
+      width: 100%;
+
+      .agentImage {
+        border-radius: 5px;
+      }
+
+      .agentSocial {
+        position: absolute;
+        bottom: 0;
+        left: 0;
         width: 100%;
-
-        .agentImage {
-          border-radius: 5px;
-        }
-
-        .agentSocial {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          @include flexcoljend;
-          align-items: flex-start !important;
+        height: 100%;
+        opacity: 0;
+        @include flexcoljend;
+        align-items: flex-start !important;
+        transition: all 0.3s ease-in-out;
+        .agentSocialLink {
+          font-size: 20px;
+          padding: 10px;
+          background-color: $navyBlue;
+          margin: 10px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          color: #fff;
+          @include flexrowcenter;
           transition: all 0.3s ease-in-out;
-          .agentSocialLink {
-            font-size: 20px;
-            padding: 10px;
-            background-color: $navyBlue;
-            margin: 10px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            color: #fff;
-            @include flexrowcenter;
-            transition: all 0.3s ease-in-out;
 
-            &:hover {
-              background-color: $orange;
-            }
+          &:hover {
+            background-color: $orange;
           }
         }
       }
-
-      .agentName {
-        font-family: $mainFont;
-        color: $navyBlue;
-      }
-      .agentEmail {
-        font-size: 20px;
-        width: 40px;
-        height: 40px;
-        background-color: #ffeae5;
-        @include flexrowcenter;
-        color: $orange;
-        border-radius: 50%;
-        padding: 5px;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          background-color: $orange;
-          color: #fff;
-        }
-      }
-      .agentProperties {
-        color: $pColor;
-        font-size: 16px;
-        font-family: $mainFont;
-      }
     }
-  }
-  .agentBottom {
-    padding: 15px;
-    border-top: 1px solid #e7e7e7;
 
-    .phoneIcon {
-      color: $orange;
-      font-size: 18px;
-      margin-right: 5px;
-    }
-    .agentPhone {
+    .agentName {
+      font-family: $mainFont;
       color: $navyBlue;
-      font-family: $mainFont;
-      font-size: 16px;
     }
-    .agentButton {
-      padding: 10px 15px;
-      border: none;
-      outline: none;
-      background-color: $navyBlue;
-      color: #fff;
-      font-weight: 600;
-      font-family: $mainFont;
-      border-radius: 5px;
-      font-size: 17px;
+    .agentEmail {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: #ffeae5;
+      @include flexrowcenter;
+      color: $orange;
+      border-radius: 50%;
+      padding: 5px;
       transition: all 0.3s ease-in-out;
-
       &:hover {
         background-color: $orange;
+        color: #fff;
       }
+    }
+    .agentProperties {
+      color: $pColor;
+      font-size: 16px;
+      font-family: $mainFont;
+    }
+  }
+}
+.agentBottom {
+  padding: 15px;
+  border-top: 1px solid #e7e7e7;
+
+  .phoneIcon {
+    color: $orange;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .agentPhone {
+    color: $navyBlue;
+    font-family: $mainFont;
+    font-size: 16px;
+  }
+  .agentButton {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: $navyBlue;
+    color: #fff;
+    font-weight: 600;
+    font-family: $mainFont;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $orange;
     }
   }
 }

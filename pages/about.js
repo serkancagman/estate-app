@@ -7,6 +7,7 @@ import {
   AboutBanner,
   AboutServices,
   Achievement,
+  AboutAgents,
 } from "components";
 const about = () => {
   return (
@@ -20,6 +21,7 @@ const about = () => {
       <AboutBanner />
       <AboutServices />
       <Achievement />
+      <AboutAgents />
       <Footer />
     </>
   );

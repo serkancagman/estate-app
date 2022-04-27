@@ -17,7 +17,12 @@ const Agents = () => {
         </div>
         <div className="row g-3">
           {agentItems.map((item, index) => {
-            return <AgentItem key={index} item={item} />;
+            return (
+              <div className="col-lg-4 col-md-6">
+                {" "}
+                <AgentItem key={index} item={item} />{" "}
+              </div>
+            );
           })}
         </div>
       </div>
