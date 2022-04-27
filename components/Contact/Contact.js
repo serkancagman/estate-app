@@ -165,11 +165,13 @@ const Contact = () => {
                 </div>
                 <div className="d-flex justify-content-start my-2 align-items-center">
                   <FiMail className={style.contactInfoIcon} />
-                  
-                    <a className={style.contactInfoText} href="mailto:cagmanserkann@gmail.com">
-                      cagmanserkann@gmail.com
-                    </a>
-                
+
+                  <a
+                    className={style.contactInfoText}
+                    href="mailto:cagmanserkann@gmail.com"
+                  >
+                    cagmanserkann@gmail.com
+                  </a>
                 </div>
               </div>
             </div>

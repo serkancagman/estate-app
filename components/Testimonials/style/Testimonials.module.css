@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.testimonials {
+  margin: 40px 0;
+  padding: 40px 0;
+}
+
+.testimonials .testimonialsHeader {
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.testimonials .testimonialsHeader .testimonialsTitle {
+  color: #201c2d;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.testimonials .testimonialsHeader .testimonialsSubTitle {
+  margin: auto;
+  max-width: 700px;
+  color: #62606c;
+  text-align: center;
+  font-size: 17px;
+}
+
+.testimonials .testimonialsCard {
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.testimonials .testimonialsCard .testimonialsCardInner {
+  padding: 15px;
+}
+
+.testimonials .testimonialsCard .testimonialsCardInner .testimonialsCardImg {
+  font-size: 0;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonialsCard .testimonialsCardInner .testimonialsCardImg .personImg {
+  border-radius: 50%;
+}
+
+.testimonials .testimonialsCard .testimonialsCardInner .testimonialsCardName {
+  font-family: "Poppins", sans-serif;
+  color: #201c2d;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonialsCard .testimonialsCardInner .testimonialsCardJob {
+  font-family: "Poppins", sans-serif;
+  color: #62606c;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonialsCard .testimonialsCardInner .testimonialsCardDesignation {
+  font-family: "Poppins", sans-serif;
+  color: #62606c;
+  font-size: 15px;
+  font-weight: 550;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=Testimonials.module.css.map */

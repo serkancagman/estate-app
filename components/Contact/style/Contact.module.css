@@ -74,6 +74,10 @@
   margin-bottom: 5px;
 }
 
+.contactInfo {
+  padding: 0 20px;
+}
+
 .contactInfoHeader {
   padding: 10px 0;
   width: 100%;

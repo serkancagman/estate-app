@@ -23,3 +23,4 @@ export { default as AboutServices } from "./AboutServices/AboutServices";
 export { default as Achievement } from "./Achievement/Achievement";
 export { default as AboutAgents } from "./AboutAgents/AboutAgents";
 export { default as Contact } from "./Contact/Contact";
+export { default as Testimonials } from "./Testimonials/Testimonials";
