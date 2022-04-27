@@ -1,0 +1,49 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+.aboutServices{
+    @include sectionPM;
+    background-color: #f7fefe;
+
+    .aboutServicesHeader{
+        padding: 1rem 0;
+        width: 100%;
+
+        .aboutServicesTitle{
+            @include mainTitle;
+            text-align: center;
+        }
+        .aboutServicesSubTitle{
+            color: $pColor;
+            text-align: center;
+            @include subTitle;
+            font-size: 17px;
+        }
+    }
+
+    .aboutServicesItem{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: #fff;
+        padding: 15px;
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transform : translateY(-5px);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        }
+
+        .serviceImgWrapper{
+            background-color: #efefef;
+            padding: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .aboutServicesTitle{
+            font-size: 20px;
+            margin: 0 5px;
+            color: $navyBlue;
+            font-family: $mainFont;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { Header, BreadCrumb, Footer, AboutBanner } from "components";
+import { Header, BreadCrumb, Footer, AboutBanner, AboutServices } from "components";
 const about = () => {
   return (
     <>
@@ -11,7 +11,7 @@ const about = () => {
       <Header />
       <BreadCrumb currentTitle="About Us" />
       <AboutBanner />
-
+    <AboutServices />
       <Footer />
     </>
   );
