@@ -5,7 +5,6 @@
   @include sectionPM;
 
   .contactForm {
-    padding: 10px 0;
     width: 100%;
   }
   .contactFormHeader {
@@ -61,4 +60,35 @@
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 5px;
+}
+
+.contactInfoHeader{
+    padding: 10px 0;
+    width: 100%;
+
+    
+    .contactInfoTitle {
+        margin: 30px 0;
+        font-size: 25px;
+        font-weight: 600;
+        font-family: $mainFont;
+    }
+    .contactInfoSubTitle {
+        font-family: $mainFont;
+        color: $pColor;
+        font-size: 16px;
+    }
+
+}
+
+.contactInfoIcon{
+    font-size: 23px;
+    color: $orange;
+    margin-right: 10px;
+}
+.contactInfoText{
+    margin: 0;
+    font-family: $mainFont;
+    color: $navyBlue;
+    font-size: 17px;
 }

@@ -6,7 +6,6 @@
 }
 
 .contact .contactForm {
-  padding: 10px 0;
   width: 100%;
 }
 
@@ -73,5 +72,36 @@
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 5px;
+}
+
+.contactInfoHeader {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.contactInfoHeader .contactInfoTitle {
+  margin: 30px 0;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactInfoHeader .contactInfoSubTitle {
+  font-family: "Poppins", sans-serif;
+  color: #62606c;
+  font-size: 16px;
+}
+
+.contactInfoIcon {
+  font-size: 23px;
+  color: #fe5631;
+  margin-right: 10px;
+}
+
+.contactInfoText {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #201c2d;
+  font-size: 17px;
 }
 /*# sourceMappingURL=Contact.module.css.map */
