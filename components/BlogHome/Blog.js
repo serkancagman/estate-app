@@ -32,6 +32,20 @@ const Blog = () => {
           loop={true}
           modules={[Pagination, Autoplay]}
           className="mySwiper blogSwiper"
+          breakpoints={{
+            279: {
+              slidesPerView: 1,
+            },
+            420: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
         >
           <SwiperSlide>
             <BlogItem
