@@ -28,8 +28,7 @@ const Banner = () => {
                 <Image
                   src={bannerImage}
                   alt="banner"
-                  width={700}
-                  height={700}
+                 fill="responsive"
                   className={style.bannerImage}
                 />
               </div>

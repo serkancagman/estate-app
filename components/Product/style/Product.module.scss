@@ -57,7 +57,7 @@
   color: #fff;
   border-radius: 5px;
   font-weight: 550;
-  font-size: 13px ;
+  font-size: 13px;
 }
 .productPrice {
   position: absolute;
@@ -145,22 +145,20 @@
     background-color: $orange;
   }
 }
-.featuredText{
+.featuredText {
   background-color: $green !important;
 }
-.newText{
+.newText {
   background-color: purple !important;
 }
 
-@media screen and (max-width:1023.99px) and (min-width:320px) {
-.productButton{
-  padding: 10px 15px !important;
-
+@media screen and (max-width: 1023.99px) and (min-width: 320px) {
+  .productButton {
+    padding: 10px 15px !important;
+  }
 }
-}
-@media screen and (max-width:319.99px) {
-.productButton{
-  padding: 5px 10px !important;
-
-}
+@media screen and (max-width: 319.99px) {
+  .productButton {
+    padding: 5px 10px !important;
+  }
 }

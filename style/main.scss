@@ -95,24 +95,23 @@
   }
 }
 
-
-@media screen and (max-width:1023.99px) and (min-width:767.99px) {
-  .ant-rate{
+@media screen and (max-width: 1023.99px) and (min-width: 767.99px) {
+  .ant-rate {
     font-size: 16px !important;
   }
 }
-@media screen and (max-width:767.99px){
-  .featuredSwiper{
-    .swiper-button-prev{
+@media screen and (max-width: 767.99px) {
+  .featuredSwiper {
+    .swiper-button-prev {
       display: none !important;
     }
-    .swiper-button-next{
+    .swiper-button-next {
       display: none !important;
     }
   }
 }
-@media screen and (max-width:319.99px) and (min-width:279px) {
-  .ant-rate{
+@media screen and (max-width: 319.99px) and (min-width: 279px) {
+  .ant-rate {
     font-size: 10px !important;
   }
 }

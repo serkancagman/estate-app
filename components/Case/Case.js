@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./style/Case.module.css";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import CaseItem from "./CaseItem";
@@ -27,24 +26,29 @@ const Case = () => {
           }}
           loop={true}
           modules={[Navigation, Autoplay]}
+          breakpoints={{
+            279: {
+              slidesPerView: 1,
+            },
+            420: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
         >
           <SwiperSlide>
-            <CaseItem imageUrl={caseImg} title="Apartment" />
+            <CaseItem imageUrl={caseImg} titleName="Apartment" />
           </SwiperSlide>
           <SwiperSlide>
-            <CaseItem imageUrl={caseImg2} title="Modern Home" />
+            <CaseItem imageUrl={caseImg2} titleName="Modern Home" />
           </SwiperSlide>
           <SwiperSlide>
-            <CaseItem imageUrl={caseImg3} title="Modern Villa" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CaseItem imageUrl={caseImg} title="Apartment" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CaseItem imageUrl={caseImg2} title="Modern Home" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CaseItem imageUrl={caseImg3} title="Modern Villa" />
+            <CaseItem imageUrl={caseImg3} titleName="Modern Villa" />
           </SwiperSlide>
         </Swiper>
       </div>

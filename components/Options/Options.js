@@ -24,8 +24,8 @@ const Options = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-"> 
-          <div className={style.optionInner}>
+          <div className="col-lg-4 col-md-">
+            <div className={style.optionInner}>
               <div className="d-flex flex-column justify-content-between align-items-start">
                 ,
                 <Image src={optionImage2} alt="option" />
@@ -40,7 +40,7 @@ const Options = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-">
-          <div className={style.optionInner}>
+            <div className={style.optionInner}>
               <div className="d-flex flex-column justify-content-between align-items-start">
                 ,
                 <Image src={optionImage3} alt="option" />
@@ -53,7 +53,6 @@ const Options = () => {
                 <button className={style.optionButton}>Learn More</button>
               </div>
             </div>
-
           </div>
         </div>
       </div>
