@@ -77,8 +77,8 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   border-radius: 5px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .blogItemHeader {

@@ -1,0 +1,53 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+.aboutBanner{
+    @include sectionPM;
+
+    .aboutBannerImageWrapper{
+        font-size: 0;
+        width: 100%;
+
+        .aboutImg{
+            border-radius: 10px;
+        }
+    }
+    .aboutBannerContent{
+        padding: 1rem 0;
+        width: 100%;
+    }
+    .aboutBannerTitle{
+        @include mainTitle;
+    }
+    .aboutBannerDescription{
+        color: $pColor;
+        font-family: $mainFont;
+        font-size: 17px;
+        font-weight: 550;
+    }
+
+    .aboutBannerSloganArea{
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        border-left: 2px solid $orange;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-top: 40px;
+        .aboutBannerSlogan{
+            color: $pColor;
+            font-style: italic;
+            font-size: 17px;
+            font-family: $mainFont;
+        }
+        .aboutBannerSloganSign{
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+            font-family: $mainFont;
+            .aboutBannerSloganName{
+                color: $orange;
+            }
+        }
+    }
+
+}
