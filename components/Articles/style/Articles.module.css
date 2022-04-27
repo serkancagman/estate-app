@@ -14,8 +14,8 @@
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 20px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -36,7 +36,16 @@
   color: #201c2d;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 991.99px) and (min-width: 279.9px) {
+  .articleItem {
+    padding: 10px !important;
+  }
+  .articleItemTitle {
+    font-size: 14px !important;
+  }
 }
 /*# sourceMappingURL=Articles.module.css.map */
