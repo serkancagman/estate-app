@@ -13,7 +13,7 @@ const ProductList = ({ product }) => {
             <div className={style.productImageArea}>
               <Image
                 src={product.photos[0]}
-                width={420}
+                width={500}
                 height={310}
                 fill="layoout"
                 alt="product"
