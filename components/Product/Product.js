@@ -14,8 +14,8 @@ const Product = ({ product }) => {
               src={product.photos[0]}
               alt="product"
               className={style.productImage}
-              width={400}
-              height={250}
+              width={500}
+              height={270}
             />
             <div className={style.productImageOverlay}>
               <div className="d-flex justify-content-start align-items-center">
