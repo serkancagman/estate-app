@@ -10,13 +10,11 @@ const products = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Header />
-        <BreadCrumb currentTitle="Properties" />
-        <Filterbar />
-        <AllProducts />
-        <Footer />
-      </main>
+      <Header />
+      <BreadCrumb currentTitle="Properties" />
+      <Filterbar />
+      <AllProducts />
+      <Footer />
     </>
   );
 };

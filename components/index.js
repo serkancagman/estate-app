@@ -17,3 +17,4 @@ export { default as AllProducts } from "./AllProducts/AllProducts";
 export { default as ProductDetail } from "./ProductDetail/ProductDetail";
 export { default as BlogItem } from "./BlogHome/BlogItem";
 export { default as Blog } from "./Blog/Blog";
+export { default as Agents } from "./Agents/Agents";
