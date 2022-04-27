@@ -1,0 +1,52 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixins.scss";
+
+.contact {
+  @include sectionPM;
+
+  .contactForm {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .contactFormHeader {
+    padding: 10px 0;
+    width: 100%;
+
+    .contactFormTitle {
+      @include mainTitle;
+    }
+    .contactFormSubTitle {
+      font-family: $mainFont;
+      color: $pColor;
+      font-size: 17px;
+    }
+  }
+  .formLabel {
+    font-family: $mainFont;
+    font-size: 17px;
+  }
+  .formInput {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #efefef;
+    margin: 10px 0;
+    transition: all 0.3s ease-in-out;
+    outline: 2px solid transparent;
+    &:focus {
+      outline: 2px solid $orange;
+    }
+  }
+}
+.formButton {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: $orange;
+  color: #fff;
+  font-weight: 600;
+  font-family: $mainFont;
+  border-radius: 5px;
+  font-size: 17px;
+}
