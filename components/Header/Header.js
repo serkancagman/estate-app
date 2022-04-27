@@ -4,12 +4,12 @@ import React from "react";
 import style from "./style/Header.module.css";
 import logo from "assets/logo/white-logo.png";
 import { Dropdown, Menu } from "antd";
-import { BsFillPersonFill,BsSearch } from "react-icons/bs";
-
+import { BsFillPersonFill, BsSearch } from "react-icons/bs";
+import { AiOutlineMenu } from "react-icons/ai";
 const Header = () => {
   const menu = (
     <Menu>
-      <Menu.Item>
+      <Menu.Item >
         <Link href="/login">
           <a>Login</a>
         </Link>
@@ -31,42 +31,52 @@ const Header = () => {
               <Image src={logo} alt="logo" width={130} height={50} />
             </a>
           </Link>
-          <div className="collapse navbar-collapse" id="navbarContent">
-            <ul className="navbar-nav mx-auto">
-              <li className="nav-item mx-2">
+          <button
+            className={style.hamburgerBtn}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navContent"
+          >
+            <AiOutlineMenu className={style.hamburgerIcon} />
+          </button>
+          <Dropdown overlay={menu}>
+            <BsFillPersonFill className={style.userIcon} />
+          </Dropdown>
+          <div className="collapse navbar-collapse" id="navContent">
+            <ul className={`navbar-nav mx-auto ${style.navbarMobile}`}>
+              <li className={`nav-item mx-2 ${style.navItemMobile}`}>
                 <Link href="/">
                   <a className={style.navLink}>Home</a>
                 </Link>
               </li>
-              <li className="nav-item mx-2">
+              <li className={`nav-item mx-2 ${style.navItemMobile}`}>
                 <Link href="/blog">
                   <a className={style.navLink}>Blog</a>
                 </Link>
               </li>
-              <li className="nav-item mx-2">
+              <li className={`nav-item mx-2 ${style.navItemMobile}`}>
                 <Link href="/agents">
                   <a className={style.navLink}>Agents</a>
                 </Link>
               </li>
-              <li className="nav-item mx-2">
+              <li className={`nav-item mx-2 ${style.navItemMobile}`}>
                 <Link href="/about">
                   <a className={style.navLink}>About</a>
                 </Link>
               </li>
-              <li className="nav-item mx-2">
+              <li className={`nav-item mx-2 ${style.navItemMobile}`}>
                 <Link href="/contact">
                   <a className={style.navLink}>Contact</a>
                 </Link>
               </li>
-              <li className="nav-item mx-2">
+              <li className={`nav-item mx-2 ${style.navItemMobile}`}>
                 <Link href="/testimonials">
                   <a className={style.navLink}>Testimonials</a>
                 </Link>
               </li>
             </ul>
-           
-          </div>
-          <form className="position-relative">
+            <form>
+              <div className={style.searchInputWrapper}>
               <input
                 type="text"
                 className={style.searchInput}
@@ -76,11 +86,12 @@ const Header = () => {
                 {" "}
                 <BsSearch className={style.searchIcon} />
               </button>
+              </div>
             </form>
-            <Dropdown overlay={menu}>
-              <BsFillPersonFill className={style.userIcon} />
-            </Dropdown>
+          </div>
+         
         </nav>
+        
       </div>
     </header>
   );
