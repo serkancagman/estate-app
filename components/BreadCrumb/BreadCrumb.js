@@ -11,7 +11,7 @@ const BreadCrumb = ({ secondTitle, currentTitle }) => {
           <div className="col-md-6">
             <div className={style.breadCrumbInner}>
               <h3 className={style.breadCrumbTitle}>{currentTitle}</h3>
-              <div className="d-flex justify-content-start align-items-center">
+              <div className={style.breadCrumbTitleArea}>
                 <Link href="/">
                   <a className={style.breadCrumbLink}>Home</a>
                 </Link>

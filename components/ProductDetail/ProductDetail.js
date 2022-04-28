@@ -15,7 +15,6 @@ import AgentBox from "./AgentBox";
 import FeaturedProperty from "./FeaturedProperty";
 import ProductTags from "./ProductTags";
 const ProductDetail = ({ product }) => {
-  console.log(product);
   return (
     <section className={style.productDetail}>
       <div className="container">
@@ -30,6 +29,14 @@ const ProductDetail = ({ product }) => {
             loop={true}
             modules={[Navigation, Autoplay]}
             className="mySwiper detailSwiper"
+            breakpoints={{
+              279: {
+                slidesPerView: 1,
+              },
+              440: {
+                slidesPerView: 2,
+              }
+            }}
           >
             {product.photos.map((image, index) => {
               return (
@@ -121,7 +128,7 @@ const ProductDetail = ({ product }) => {
                         ${product.price}
                       </span>
                     </div>
-                    <div className={style.productDetailAverage}>
+                    <div className={`${style.productDetailAverage} detailAverage`}>
                       <Rate disabled defaultValue={product.average} />
                     </div>
                   </div>

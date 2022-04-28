@@ -5,7 +5,7 @@ const Address = ({ product }) => {
     <div className={style.addressBox}>
       <div className={style.addressBoxInner}>
         <h3 className={style.addressBoxTitle}>Address</h3>
-        <div className="row g-3">
+        <div className="row">
           <div className="col-lg-6 col-md-12">
             <div className={style.addressBoxItem}>
               <h6 className={style.addressBoxItemTitle}>Country</h6>

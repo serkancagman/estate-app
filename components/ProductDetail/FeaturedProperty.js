@@ -8,7 +8,6 @@ import Link from "next/link";
 const FeaturedProperty = () => {
   const fetcher = (url) => axios.get(url).then((res) => res.data);
   const { data, error } = useSWR(`${process.env.API_URL}product`, fetcher);
-  console.log(data);
   return (
     <div className={style.featuredProperty}>
       <div className={style.featuredPropertyInner}>

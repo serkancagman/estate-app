@@ -37,8 +37,8 @@
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .breadCrumb .breadCrumbInner .breadCrumbLink:hover {
@@ -61,5 +61,33 @@
   border-radius: 50%;
   margin-right: 10px;
   margin-bottom: 2px;
+}
+
+.breadCrumbTitleArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 340px) {
+  .breadCrumbTitleArea {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
 }
 /*# sourceMappingURL=BreadCrumb.module.css.map */
