@@ -3,7 +3,6 @@
 .neighborhood {
   margin: 40px 0;
   padding: 40px 0;
-  background: url("../../../assets/neighborhood/bg.jpg");
   position: relative;
 }
 
@@ -26,6 +25,16 @@
   font-size: 17px;
   text-align: center;
   color: #62606c;
+}
+
+.NeighborImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .neighborhoodWrapper {

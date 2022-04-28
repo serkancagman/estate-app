@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./style/Achievement.module.css";
+import neighborBg from "assets/neighborhood/bg.jpg";
+import Image from "next/image";
 const Achievement = () => {
   return (
     <section className={style.achievement}>
@@ -36,6 +38,7 @@ const Achievement = () => {
         </div>
       </div>
       <div className={style.achievementFade}></div>
+      <Image src={neighborBg} alt="neighborhood" className={style.achievementBg} layout="fill" />
     </section>
   );
 };

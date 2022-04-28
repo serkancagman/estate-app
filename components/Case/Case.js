@@ -3,12 +3,15 @@ import style from "./style/Case.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import CaseItem from "./CaseItem";
+import cageBg from "assets/case/bg-1.jpg"
 import caseImg from "assets/case/case-study-1.jpg";
 import caseImg2 from "assets/case/case-study-2.jpg";
 import caseImg3 from "assets/case/case-study-3.jpg";
+import Image from "next/image";
 const Case = () => {
   return (
     <section className={style.case}>
+      <div className={style.caseInner}>
       <div className="container">
         <div className={style.caseHeader}>
           <h2 className={style.caseTitle}>Case</h2>
@@ -52,6 +55,8 @@ const Case = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      </div>
+      <Image src={cageBg} alt="case" layout="fill" className={style.caseBg} />
     </section>
   );
 };

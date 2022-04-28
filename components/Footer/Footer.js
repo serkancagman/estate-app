@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./style/Footer.module.css";
 import logo from "assets/logo/white-logo.png";
+import footerBg from "assets/footer/footer-bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -16,6 +17,7 @@ import { MdAccessTime } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className={style.footer}>
+      <div className={style.footerInner}>
       <div className="container">
         <div className="row g-3">
           <div className="col-lg-3 col-md-6  col-12">
@@ -181,6 +183,8 @@ const Footer = () => {
           </h3>
         </div>
       </div>
+      </div>
+      <Image src={footerBg} className={style.footerBg} layout="fill" />
     </footer>
   );
 };

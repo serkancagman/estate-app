@@ -3,15 +3,22 @@
 
 .achievement {
   @include sectionPM;
-  background: url("../../../assets/neighborhood/bg.jpg");
+
   position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  z-index: 0;
 
   .achievementInner {
     position: relative;
     z-index: 1;
+  }
+  .achievementBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
   }
   .achievementHeader {
     padding: 1rem 0;

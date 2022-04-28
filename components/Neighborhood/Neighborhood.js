@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import style from "./style/Neighborhood.module.css";
+import neighborBg from "assets/neighborhood/bg.jpg";
 import neighImg from "assets/neighborhood/neighborhood-1.jpg";
 import neighImg2 from "assets/neighborhood/neighborhood-2.jpg";
 import neighImg3 from "assets/neighborhood/neighborhood-3.jpg";
@@ -121,6 +122,7 @@ const Neighborhood = () => {
         </div>
       </div>
       <div className={style.fadeBackground}></div>
+      <Image src={neighborBg} alt="neighborhood" layout="fill" className={style.NeighborImg} />
     </section>
   );
 };
