@@ -5,6 +5,7 @@ import { Navigation, Autoplay } from "swiper";
 import Product from "components/Product/Product";
 import "swiper/css/navigation";
 import { useSelector } from "react-redux";
+import Link from "next/link";
 const Featured = () => {
   const { products, loading, error } = useSelector((state) => state.products);
 
@@ -54,7 +55,11 @@ const Featured = () => {
         </Swiper>
 
         <div className="d-flex align-items-center justify-content-center">
+          <Link href="/properties">
+            <a>
           <button className={style.viewAllBtn}>VIEW ALL APARTMENTS</button>
+            </a>
+          </Link>
         </div>
       </div>
     </section>
