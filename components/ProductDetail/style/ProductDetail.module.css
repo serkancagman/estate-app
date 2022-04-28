@@ -875,9 +875,18 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
   .actionBoxButton {
     padding: 0 5px !important;
+  }
+  .featuredPropertyImage {
+    margin-bottom: 10px !important;
+  }
+  .featuredPropertyItem {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
 }
 /*# sourceMappingURL=ProductDetail.module.css.map */

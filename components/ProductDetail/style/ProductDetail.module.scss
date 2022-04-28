@@ -588,9 +588,14 @@
     justify-content: center;
   }
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width:360px) {
   .actionBoxButton{
     padding: 0 5px !important;
   }
-  
+  .featuredPropertyImage{
+    margin-bottom: 10px !important;
+  }
+  .featuredPropertyItem{
+    flex-direction: column !important;
+  }
 }
