@@ -21,6 +21,14 @@ const Banner = () => {
                   veritatis quidem accusamus omnis fugit! Excepturi rem unde
                   ullam doloremque.
                 </p>
+                <p className={style.bannerText}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente amet voluptatibus voluptate at necessitatibus maxime,
+                  veritatis quidem accusamus omnis fugit! Excepturi rem unde
+                  ullam doloremque. amet voluptatibus voluptate at
+                  necessitatibus maxime, veritatis quidem accusamus omnis fugit!
+                  Excepturi rem unde ullam doloremque.
+                </p>
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -28,14 +36,13 @@ const Banner = () => {
                 <Image
                   src={bannerImage}
                   alt="banner"
-                 fill="responsive"
+                  fill="responsive"
                   className={style.bannerImage}
                 />
               </div>
             </div>
           </div>
           <div className={style.bannerFade}></div>
-          <Filterbar />
         </div>
       </div>
     </section>

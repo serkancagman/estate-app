@@ -14,7 +14,7 @@ const ProductList = ({ product }) => {
               <Image
                 src={product.photos[0]}
                 width={500}
-                height={310}
+                height={390}
                 fill="layoout"
                 alt="product"
                 className={style.productImage}

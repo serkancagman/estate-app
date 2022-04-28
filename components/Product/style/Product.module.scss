@@ -62,11 +62,12 @@
   position: absolute;
   right: 10px;
   bottom: -10px;
+  padding: 0 4px;
   background-color: #fff;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
   @include flexrowcenter;

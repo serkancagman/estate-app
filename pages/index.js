@@ -28,7 +28,7 @@ export default function Home({ products }) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Best Properties</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

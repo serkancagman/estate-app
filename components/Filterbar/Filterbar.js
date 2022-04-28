@@ -93,8 +93,8 @@ const Filterbar = () => {
                     <Option value="France">France</Option>
                     <Option value="Italy">Italy</Option>
                     <Option value="Spain">Spain</Option>
-                    <Option value="United-kingdom">United Kingdom</Option>
-                    <Option value="United-states">United States</Option>
+                    <Option value="Netherlands">Netherlands</Option>
+                    <Option value="Sweeden">Sweeden</Option>
                     <Option value="Turkey">Turkey</Option>
                   </Select>
                 </Form.Item>
@@ -168,12 +168,13 @@ const Filterbar = () => {
                     size="large"
                     defaultValue="Select Location"
                   >
-                    <Option value="germany">Germany</Option>
-                    <Option value="france">France</Option>
-                    <Option value="italy">Italy</Option>
-                    <Option value="spain">Spain</Option>
-                    <Option value="united-kingdom">United Kingdom</Option>
-                    <Option value="united-states">United States</Option>
+                    <Option value="Germany">Germany</Option>
+                    <Option value="France">France</Option>
+                    <Option value="Italy">Italy</Option>
+                    <Option value="Spain">Spain</Option>
+                    <Option value="Netherlands">Netherlands</Option>
+                    <Option value="Sweeden">Sweeden</Option>
+                    <Option value="Turkey">Turkey</Option>
                   </Select>
                 </Form.Item>
               </div>
@@ -184,13 +185,12 @@ const Filterbar = () => {
                     size="large"
                     defaultValue="Property Type"
                   >
-                    <Option value="apartment">Apartment</Option>
-                    <Option value="house">House</Option>
-                    <Option value="villa">Villa</Option>
-                    <Option value="condo">Condo</Option>
-                    <Option value="townhouse">Townhouse</Option>
-                    <Option value="duplex">Duplex</Option>
-                    <Option value="multi-family">Multi-Family</Option>
+                    <Option value="Apartment">Apartment</Option>
+                    <Option value="House">House</Option>
+                    <Option value="Villa">Villa</Option>
+                    <Option value="Condo">Condo</Option>
+                    <Option value="Townhouse">Townhouse</Option>
+                    <Option value="Duplex">Duplex</Option>
                   </Select>
                 </Form.Item>
               </div>
