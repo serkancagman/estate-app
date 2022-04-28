@@ -28,7 +28,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg">
           <Link href="/">
             <a className={style.logo}>
-              <Image src={logo} alt="logo" width={130} height={50} />
+              <Image src={logo} alt="logo" width={130} priority={true} height={50} />
             </a>
           </Link>
           <button
