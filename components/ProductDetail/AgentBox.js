@@ -14,6 +14,7 @@ const AgentBox = () => {
               width={70}
               height={70}
               className={style.personImg}
+              alt="person"
             />
           </div>
           <div className="d-flex flex-column h-100 justify-content-between align-items-start">

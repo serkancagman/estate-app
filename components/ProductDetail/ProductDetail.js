@@ -40,6 +40,7 @@ const ProductDetail = ({ product }) => {
                       width={730}
                       height={500}
                       className={style.productImage}
+                      alt="product-image"
                     />
                   </div>
                 </SwiperSlide>

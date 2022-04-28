@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, Footer, BreadCrumb, Contact } from "components";
 import Head from "next/head";
-const contact = () => {
+const ContactPage = () => {
   return (
     <>
       <Head>
@@ -16,4 +16,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default ContactPage;

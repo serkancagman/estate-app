@@ -12,6 +12,7 @@ const TestimonialItem = ({ imgUrl, title, rate,job }) => {
             src={imgUrl}
             width={100}
             height={100}
+            alt="person"
           />
         </div>
         <h4 className={style.testimonialsCardName}>{title}</h4>

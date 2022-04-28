@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import { Header, Footer, BreadCrumb, Filterbar, AllProducts } from "components";
-const products = () => {
+const AllProductsPage = () => {
   return (
     <>
       <Head>
@@ -19,4 +19,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default AllProductsPage;

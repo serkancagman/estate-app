@@ -31,7 +31,7 @@ const Plan = ({ product }) => {
           </div>
         </div>
         <div className={style.planBoxImage}>
-        <Image src={planImage} layout="responsive" />
+        <Image src={planImage} alt="plan-image" layout="responsive" />
         </div>
       </div>
     </div>

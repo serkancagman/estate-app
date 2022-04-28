@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import userProduct from "hooks/UseProduct";
 import Head from "next/head";
 import { BreadCrumb, Footer, Header, ProductDetail } from "components";
-const Product = () => {
+const ProductPage = () => {
   const router = useRouter();
   const { productid } = router.query;
   const { data, isLoading, isError } = userProduct(productid);
@@ -24,4 +24,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default ProductPage;

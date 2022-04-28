@@ -9,7 +9,7 @@ import {
   Achievement,
   AboutAgents,
 } from "components";
-const about = () => {
+const AboutPage = () => {
   return (
     <>
       <Head>
@@ -27,4 +27,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default AboutPage;

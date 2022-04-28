@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, Footer, BreadCrumb, Testimonials, Partners } from "components";
 import Head from "next/head";
-const testimonials = () => {
+const TestimonialsPage = () => {
   return (
     <>
       <Head>
@@ -17,4 +17,4 @@ const testimonials = () => {
   );
 };
 
-export default testimonials;
+export default TestimonialsPage;

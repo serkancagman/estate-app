@@ -25,6 +25,7 @@ const FeaturedProperty = () => {
                         className={style.featuredPropertyImg}
                         width={130}
                         height={90}
+                        alt="featured-property"
                       />
                     </div>
                     <div className="d-flex flex-column w-100 justify-content-between align-items-start">
