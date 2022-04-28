@@ -158,12 +158,18 @@
 }
 
 .footerTitle {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   margin: 0;
 }
 
 .footerTitle .byTitle {
   color: #fe5631;
+}
+
+@media screen and (max-width: 320px) {
+  .footerListItem {
+    margin: 10px 0 !important;
+  }
 }
 /*# sourceMappingURL=Footer.module.css.map */

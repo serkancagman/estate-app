@@ -123,11 +123,17 @@
   margin-top: 40px;
 }
 .footerTitle {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   margin: 0;
 
   .byTitle {
     color: $orange;
   }
+}
+
+@media screen and (max-width:320px) {
+    .footerListItem{
+      margin: 10px 0 !important;
+    }
 }
