@@ -7,6 +7,7 @@
 * MONGO DB
 * SASS 
 * NODE JS
+* REACT REDUX
 
 ### Dependencies
 * ANT Design
