@@ -37,7 +37,8 @@ const ProductList = ({ product }) => {
                   <span className={style.productPriceText}>
                     {product.advertStatus === "Rent"
                       ? `$${product.price} / Per Month`
-                      : `${product.price}`}
+                      : `$${product.price} / Total`}
+
                   </span>
                 </div>
               </div>

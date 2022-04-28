@@ -20,8 +20,8 @@ export const productsSlice = createSlice({
       state.filtered = state.products.filter((product) => {
         return (
           product.advertStatus === stateType &&
-          product.price <= priceValue[1] &&
-          product.price >= priceValue[0] &&
+          product.price.split('.').join("") <= priceValue[1] &&
+          product.price.split('.').join("") >= priceValue[0] &&
           product.country === locationValue &&
           product.advertType === propertyValue
         );
