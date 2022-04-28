@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=AllProducts.module.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.allProducts {
+  margin: 40px 0;
+  padding: 40px 0;
+}
+/*# sourceMappingURL=AllProducts.module.css.map */

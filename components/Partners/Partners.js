@@ -20,31 +20,31 @@ const Partners = () => {
         </h2>
         <ul className={style.partnersList}>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerA} alt="partner" />
+            <Image width={160} height={80} src={partnerA} alt="partner" />
           </li>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerB} alt="partner" />
+            <Image width={160} height={80} src={partnerB} alt="partner" />
           </li>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerC} alt="partner" />
+            <Image width={160} height={80} src={partnerC} alt="partner" />
           </li>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerD} alt="partner" />
+            <Image width={160} height={80} src={partnerD} alt="partner" />
           </li>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerE} alt="partner" />
+            <Image width={160} height={80} src={partnerE} alt="partner" />
           </li>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerF} alt="partner" />
+            <Image width={160} height={80} src={partnerF} alt="partner" />
           </li>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerG} alt="partner" />
+            <Image width={160} height={80} src={partnerG} alt="partner" />
           </li>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerH} alt="partner" />
+            <Image width={160} height={80} src={partnerH} alt="partner" />
           </li>
           <li className={style.partnersItem}>
-            <Image width={170} height={80} src={partnerI} alt="partner" />
+            <Image width={160} height={80} src={partnerI} alt="partner" />
           </li>
           <li className={style.partnersItem}>
             <Image width={170} height={80} src={partnerJ} alt="partner" />

@@ -50,6 +50,11 @@ const Header = () => {
                 </Link>
               </li>
               <li className={`nav-item mx-2 ${style.navItemMobile}`}>
+                <Link href="/properties">
+                  <a className={style.navLink}>Properties</a>
+                </Link>
+              </li>
+              <li className={`nav-item mx-2 ${style.navItemMobile}`}>
                 <Link href="/blog">
                   <a className={style.navLink}>Blog</a>
                 </Link>

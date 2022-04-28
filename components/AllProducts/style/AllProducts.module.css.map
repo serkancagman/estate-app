@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,OAAO,CAAC,oEAAI;AFEZ,AAAA,YAAY,CAAA;ECkGV,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,MAAM;CDjGhB",
     "sources": [
-        "AllProducts.module.scss"
+        "AllProducts.module.scss",
+        "../../../style/mixins.scss",
+        "../../../style/variables.scss"
     ],
     "names": [],
     "file": "AllProducts.module.css"

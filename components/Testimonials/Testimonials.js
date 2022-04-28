@@ -29,6 +29,20 @@ const Testimonials = () => {
           loop={true}
           modules={[Navigation, Autoplay]}
           className="mySwiper featuredSwiper"
+          breakpoints={{
+            279: {
+              slidesPerView: 1,
+            },
+            420: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
         >
           <SwiperSlide>
             <TestimonialItem
